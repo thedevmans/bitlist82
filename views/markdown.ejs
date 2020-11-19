@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <script>
+         if (location.protocol != 'https:') {
+          location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+         }
+      </script>
+       <!-- Codificação caracteres da página -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO Geral -->
+  <title>Cloud List  | Markdown</title>
+  <meta name="description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots">
+  <link rel="canonical" href="https://www.cloudlist.xyz">
+  <meta name="author" content="Bruninho">
+  <meta name="robots" content="index">
+  <meta name="keywords" content="lista, melhores, bots, discord, música, moderação, league of legends, jogos, economia, brasileiros, português, discordapp, bots para discord,Cloud bot List,cloud list,cloud bot list,bots for discord,game,tags,tag,fun,webdashboard,discord bot list,dc bot list,bot list,NSFW,moderation,english">
+  <link rel="shortcut icon" href="https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Flogo.png?v=1572216997039" type="image/x-icon">
+
+  <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="Cloud List  | Markdown">
+  <meta itemprop="description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots">
+  <meta itemprop="image" content="https://cdn.discordapp.com/attachments/644560294869205022/662805739852791825/cloudlistbg.png">
+  <link href="https://plus.google.com/+SuaPagina" rel="publisher">
+  
+  <!-- Open Graph Facebook -->
+  <meta property="og:title" content="Cloud List  | Markdown">
+  <meta property="og:description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots"/>
+  <meta property="og:url" content="https://www.cloudlist.xyz">
+  <meta property="og:site_name" content="Cloud Bot List"/>
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/644560294869205022/662805739852791825/cloudlistbg.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:title" content="Cloud List  | Markdown">
+  <meta name="twitter:description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots">
+  <meta name="twitter:url" content="https://www.cloudlist.xyz">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/644560294869205022/662805739852791825/cloudlistbg.png">
+  <!-- <meta name="twitter:creator" content="@estevanmaito"> -->
+  <meta name="twitter:site" content="@CloudList">
+     
+     
+  <meta name="application-name" content="Cloud Bot List"/>
+  <meta name="msapplication-TileColor" content="#7289da" />
+  <meta name="msapplication-TileImage" content="https://cdn.discordapp.com/attachments/644560294869205022/662805739852791825/cloudlistbg.png" />
+      <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Anton|Baloo+Bhai|Bowlby+One+SC|Concert+One|Francois+One|Fredoka+One|Passion+One|Patua+One|Permanent+Marker&display=swap" rel="stylesheet">
+      <link rel="canonical" href="https://cloudbotlist.glitch.me">
+      <link href="https://fonts.googleapis.com/css?family=Anton|Baloo|Baloo+Bhai|Concert+One|Fjalla+One|Fredoka+One|Fugaz+One|Patua+One|Press+Start+2P|Teko&display=swap" rel="stylesheet">
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-P7Q7WX2');
+      </script>
+      <!-- End Google Tag Manager -->
+      <link href="https://fonts.googleapis.com/css?family=Anton|Archivo+Black&display=swap" rel="stylesheet">
+
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#config-web-app -->      
+      <!-- Compiled and minified CSS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <script src="https://raw.github.com/mongodb/js-bson/master/browser_build/bson.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <link rel="stylesheet" href="/index.css">
+      <script src="/index.js"></script>
+      <link rel="stylesheet/scss" type="text/css" href="public/_navbar.scss">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/10.0.0/markdown-it.js"></script>
+
+   </head>
+   <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7Q7WX2"
+         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->  
+      <nav style="color:white;font-size:19px;" class="navbar navbar-expand-md" id="navbar">
+<a style="background:transparent;font-size:35px;text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);" class="navbar-brand" href="/">Cloud List</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+            aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+            <ul class="navbar-nav ml-auto">
+               <li  class="nav-item active">
+                  <a  class="nav-link" href="/server">
+                  <i class="fab fa-discord"></i> Join Discord</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/add">
+                  <i class="fas fa-plus-square"></i> Add Bot</a>
+               </li>
+               <li class="nav-item">
+              <a class="nav-link" href="https://www.patreon.com/cloudlist"><i class="fab fa-patreon"></i> Patreon</a>
+              </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="/tos"><i class="fas fa-info-circle"></i> TOS</a>
+                     <a class="dropdown-item" href="/markdown"><i class="fas fa-info-circle"></i> Markdown</a>
+                     <a class="dropdown-item" href="/apidocs"><i class="fas fa-info-circle"></i> Api docs</a>
+                  </div>
+               </li>
+               <li id="login" class="nav-item">
+                  <a class="nav-link" id="login_discord" href="<%=url%>">
+                  <i class="fas fa-sign-in-alt"></i> Login With Discord</a>
+               </li>
+               <li id="drop" class="nav-item dropdown" style="display: initial;">
+                  <a class="nav-link dropdown-toggle" id="user_drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-user"></i></a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4" style="background-color;white;;cursor:pointer;color:black">
+                     <a style="color:black" class="dropdown-item" href="/mybots" style="color: white"><i class="fas fa-database"></i> My Bots</a>
+                     <a style="color:black"  class="dropdown-item" href="/user" style="color: white"><i class="fas fa-user"></i> Profile</a>
+                     <a style="color:black"  class="dropdown-item" href="/api/keys" style="color: white"><i class="fas fa-key"></i> Api Keys</a>
+                     <a style="color:black"  class="dropdown-item" href="/myapikeys" style="color: white"><i class="fas fa-key"></i> My Api Keys</a>
+                     <a style="color:black"  class="dropdown-item" href="/admin" style="color: white"><i class="fas fa-user-shield"></i> Bots</a>
+                     <div class="dropdown-divider"></div>
+                     <a style="color:black"  class="dropdown-item" href="logout" style="color: white"><i class="fas fa-sign-out-alt"></i> Log out</a>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <style>
+         .nav-item {
+         cursor:pointer;
+         }
+         #navbar {
+         height: 70px;
+         background: transparent; // Transparent initial setting
+         display: block;
+         color:white;
+         position: fixed;
+         width: 100%;
+         z-index: 99999;
+         transition: all ease .5s;
+         }
+         #navbar.shrink {
+         opacity:95%;
+         height: auto;
+         transition: all ease .5s;
+         background-color:#2c2f33;
+         }
+         a {
+         font-size:19px;
+         margin-right:10px;
+         text-decoration: none;
+         color: white;
+         transition: 0.2s color;
+         }
+         a:hover {
+         color: white;
+         background-color: #1F1F1F;
+         }
+      </style>
+      <div id="banner" style="background-color:#23272A;height:550px" class="banner jumbotron jumbotron-fluid bg-blurple text-white text-center">
+      </div>
+      <div class="container" style="background-color:#232428;margin-top:40px; border-radius: 1%;width:700px;float:left;">
+         <textarea  id="long_description" style="background-color:#35363A;color:white" class="form-control" id="exampleFormControlTextarea1"  minlength="300" rows="30" readonly>
+         ---
+         # h1 Heading 
+         ## h2 Heading
+         ### h3 Heading
+         #### h4 Heading
+         ##### h5 Heading
+         ###### h6 Heading
+         ## Horizontal Rules
+         ___
+         ---
+         ***
+         ## Emphasis
+         **This is bold text**
+         __This is bold text__
+         *This is italic text*
+         _This is italic text_
+         ~~Strikethrough~~
+         ## Lists
+         Unordered
+         + Create a list by starting a line with '+', '-', or '*'
+         + Sub-lists are made by indenting 2 spaces:
+         - Marker character change forces new list start:
+         * Ac tristique libero volutpat at
+         + Facilisis in pretium nisl aliquet
+         - Nulla volutpat aliquam velit
+         + Very easy!
+         Ordered
+         1. Lorem ipsum dolor sit amet
+         2. Consectetur adipiscing elit
+         3. Integer molestie lorem at massa
+         1. You can use sequential numbers...
+         1. ...or keep all the numbers as '1.'
+         Start numbering with offset:
+         57. foo
+         1. bar
+         ## Tables
+         | Option | Description |
+         | ------ | ----------- |
+         | data   | path to data files to supply the data that will be passed into templates. |
+         | engine | engine to be used for processing templates. Handlebars is the default. |
+         | ext    | extension to be used for dest files. |
+         Right aligned columns
+         | Option | Description |
+         | ------:| -----------:|
+         | data   | path to data files to supply the data that will be passed into templates. |
+         | engine | engine to be used for processing templates. Handlebars is the default. |
+         | ext    | extension to be used for dest files. |
+         ## Links
+         [link text]()
+         [link with title]( "title text!")
+         Autoconverted link  (enable linkify to see)
+         ![Alt text][id]
+         With a reference later in the document defining the URL location: 
+         </textarea>
+      </div>
+      <div id="preview_div" class="container" style="background-color:#232428;margin-top:40px; border-radius: 1%;width:700px;float:right;">
+         <div id="long_css" style="overflow-y: scroll;min-width: 200px;height: 700px;"> </div>
+         <script>
+            $(document).ready(function() {
+            var md = window.markdownit();
+            var str = document.getElementById("long_description").value;
+            var string = md.render(str);
+            document.getElementById("long_css").innerHTML = string
+            })
+         </script>
+      </div>
+
+   </body>
+  
+   <script>    
+      $(document).ready(function() {
+        $(window).scroll(function() {
+          if ($(window).scrollTop() >= 100) {
+            $('#navbar').addClass('shrink');
+          }else {           
+            $('#navbar').removeClass('shrink');
+      }
+        });
+         });
+   </script>
+   <style>
+      #snowflakeContainer {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      display: none;
+      }
+      textarea:focus+.textarea-placeholder {
+      color: #00ff8c;
+      }
+      textarea {
+      height: auto !important;
+      resize: none;
+      }
+      .textarea-placeholder {
+      position: absolute;
+      top: -8px;
+      left: 8px;
+      font-size: 11.25px;
+      color: #888;
+      padding: 0 8px;
+      background-color: #fff;
+      user-select: none;
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+      -o-user-select: none;
+      z-index: 10;
+      transition: all 400ms ease;
+      }
+
+   </style>
+

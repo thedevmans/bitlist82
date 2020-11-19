@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <script>
+         if (location.protocol != 'https:') {
+          location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+         }
+      </script>
+  <!-- Codificação caracteres da página -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO Geral -->
+  <title>Cloud List | Add Bot </title>
+  <meta name="description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots">
+  <link rel="canonical" href="https://www.cloudlist.xyz">
+  <meta name="author" content="Bruninho">
+  <meta name="robots" content="index">
+  <meta name="keywords" content="lista, melhores, bots, discord, música, moderação, league of legends, jogos, economia, brasileiros, português, discordapp, bots para discord,Cloud bot List,cloud list,cloud bot list,bots for discord,game,tags,tag,fun,webdashboard,discord bot list,dc bot list,bot list,NSFW,moderation,english">
+  <link rel="shortcut icon" href="https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Flogo.png?v=1572216997039" type="image/x-icon">
+
+  <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="Cloud List | Add Bot">
+  <meta itemprop="description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots">
+  <meta itemprop="image" content="https://cdn.discordapp.com/attachments/644560294869205022/662805739852791825/cloudlistbg.png">
+  <link href="https://plus.google.com/+SuaPagina" rel="publisher">
+  
+  <!-- Open Graph Facebook -->
+  <meta property="og:title" content="Cloud List | Add Bot">
+  <meta property="og:description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots"/>
+  <meta property="og:url" content="https://www.cloudlist.xyz">
+  <meta property="og:site_name" content="Cloud Bot List"/>
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/644560294869205022/662805739852791825/cloudlistbg.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:title" content="Cloud List | Add Bot">
+  <meta name="twitter:description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots">
+  <meta name="twitter:url" content="https://www.cloudlist.xyz">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/644560294869205022/662805739852791825/cloudlistbg.png">
+  <!-- <meta name="twitter:creator" content="@estevanmaito"> -->
+  <meta name="twitter:site" content="@CloudList">
+     
+     
+  <meta name="application-name" content="Cloud Bot List"/>
+  <meta name="msapplication-TileColor" content="#7289da" />
+  <meta name="msapplication-TileImage" content="https://cdn.discordapp.com/attachments/644560294869205022/662805739852791825/cloudlistbg.png" />
+      <!-- UIkit CSS -->
+      <!-- UIkit JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+      <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <link rel="stylesheet" href="/index.css">
+      <link rel="stylesheet" type="text/css" href="amsify.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/10.0.0/markdown-it.js"></script>
+      <!-- Amsify Plugin -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.29.0/codemirror.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.29.0/codemirror.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.29.0/mode/javascript/javascript.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Anton|Baloo+Bhai|Bowlby+One+SC|Concert+One|Francois+One|Fredoka+One|Passion+One|Patua+One|Permanent+Marker&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Anton|Baloo|Baloo+Bhai|Concert+One|Fjalla+One|Fredoka+One|Fugaz+One|Patua+One|Press+Start+2P|Teko&display=swap" rel="stylesheet">
+      <script type="text/javascript" src="amsify.js"></script> 
+      <script>
+         window.onload = async function() { 
+         // Get the Long type
+         let token = Cookies.get('token');
+         var drop = document.getElementById("drop")
+         var login = document.getElementById("login")
+         var user_drop = document.getElementById("user_drop")
+         if (!token) {
+             drop.style.display = "none"
+         }
+           else {
+         		fetch('https://discordapp.com/api/users/@me', {
+         			headers: {
+         				Authorization: `Bearer ${token}`
+         			}
+         		})
+         			.then(res => res.json())
+         			.then(response => {
+         				const { username, discriminator } = response;
+                     drop.style.display = "initial"
+                     user_drop.innerHTML = `${username}#${discriminator}`
+                     login.style.display="none"
+         			})
+         			.catch(console.error);
+           }
+         }
+      </script>
+   </head>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="index.css">
+      <nav style="color:white;font-size:19px;" class="navbar navbar-expand-md" id="navbar">
+         <a class="navbar-brand" href="/">
+         <img src="https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Flogo_2.png?v=1575810468474" width="60" height="60" class="d-inline-block align-top" alt="">
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+            aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+            <ul class="navbar-nav ml-auto">
+               <li  class="nav-item active">
+                  <a  class="nav-link" href="/server">
+                  <i class="fab fa-discord"></i> Join Discord</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/add">
+                  <i class="fas fa-plus-square"></i> Add Bot</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="/tos"><i class="fas fa-info-circle"></i> TOS</a>
+                     <a class="dropdown-item" href="/markdown"><i class="fas fa-info-circle"></i> Markdown</a>      
+                     <a class="dropdown-item" href="/apidocs"><i class="fas fa-info-circle"></i> Api docs</a>
+                  </div>
+               </li>
+               <li id="login" class="nav-item">
+                  <a class="nav-link" id="login_discord" href="">
+                  <i class="fas fa-sign-in-alt"></i> Login With Discord</a>
+               </li>
+               <li id="drop" class="nav-item dropdown" style="display: initial;">
+                  <a class="nav-link dropdown-toggle" id="user_drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-user"></i></a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4" style="background-color;white;;cursor:pointer;color:black">
+                     <a style="color:black" class="dropdown-item" href="/mybots" style="color: white"><i class="fas fa-database"></i> My Bots</a>
+                     <a style="color:black"  class="dropdown-item" href="/user" style="color: white"><i class="fas fa-user"></i> Profile</a>
+                     <a style="color:black"  class="dropdown-item" href="/api/keys" style="color: white"><i class="fas fa-key"></i> Api Keys</a>
+                     <a style="color:black"  class="dropdown-item" href="/myapikeys" style="color: white"><i class="fas fa-key"></i> My Api Keys</a>
+                     <a style="color:black"  class="dropdown-item" href="/admin" style="color: white"><i class="fas fa-user-shield"></i> Bots</a>
+                     <div class="dropdown-divider"></div>
+                     <a style="color:black"  class="dropdown-item" href="logout" style="color: white"><i class="fas fa-sign-out-alt"></i> Log out</a>
+                  </div>
+               </li>
+
+            </ul>
+         </div>
+      </nav>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;  
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+</style>
+<body>
+
+<div id="container" style="font-family: 'Baloo Bhai', cursive; border-radius:5px;padding:10px;background-color:#232428">
+  
+  
+  <h1 id="H1_msg" style="color:#66e880">Validate Bot ID</h1>
+  <h2 id="response_message" style="margin-top:50px;text-align:center">
+    
+  </h2>
+  <!-- One "tab" for each step in the form: -->
+  <div style="height:200px;font-family: 'Baloo Bhai', cursive;" id="form_verify" >
+    <p><input style="display: block; margin: 0 auto;width:500px;margin-top:70px;font-family: 'Baloo Bhai', cursive; " id="Bot_id" placeholder="Bot's ID..." ></p>  
+    <button onclick="Verify()" style="width:500px;font-size:20px;font-family: 'Baloo Bhai', cursive; display: block; margin: 0 auto; text-align: center;padding:10px;background-color:#66bfe8;border-radius:5px;border-bottom:3px solid white;color:white;">Verify</button>
+  </div>
+  
+    <div id="form" class="container" style="font-family: 'Baloo Bhai', cursive;display:none;border-radius: 4px;padding:15px">
+      <div class="form-group">
+         <label for="exampleFormControlInput1" >Bot's Client ID *</label>
+         <input  type="text" id="bot_id" style="font-family: 'Baloo Bhai', cursive;background-color:#35363A;color:white" class="form-control" readonly >
+      </div>
+      <div class="form-group">
+         <label for="exampleFormControlInput1" >Bot's Prefix *</label>
+         <input type="text" id="bot_prefix" style="font-family: 'Baloo Bhai', cursive;background-color:#35363A;color:white" class="form-control">
+      </div>
+      <div class="form-group">
+         <label for="exampleFormControlSelect1">Select Tags</label>
+         <input type="text"  class="form-control" name="tags">
+      </div>
+      <div class="form-group">
+         <label for="exampleFormControlSelect2">Select Library</label>
+         <select class="form-control" id="library">
+            <option>discljord</option>
+            <option>aegis.cpp</option>
+            <option>discordcr</option>
+            <option>Discord.Net</option>
+            <option>DSharpPlus</option>
+            <option>dscord</option>
+            <option>DiscordGo</option>
+            <option>DisGord</option>
+            <option>catnip</option>
+            <option>Discord4J</option>
+            <option>Javacord</option>
+            <option>JDA</option>
+            <option>discord.js</option>
+            <option>Eris</option>
+            <option>Discord.jl</option>
+            <option>Discordia</option>
+            <option>discordnim</option>
+            <option>RestCord</option>
+            <option>discord.py</option>
+            <option>disco</option>
+            <option>discordrb</option>
+            <option>discord-rs</option>
+            <option>Serenity</option>
+            <option>AckCord</option>
+            <option>Sword</option>
+         </select>
+      </div>
+      <div class="form-group">
+         <label for="exampleFormControlTextarea1">Brief description of your bot * max. 140 chars</label>
+         <textarea  style="font-family: 'Baloo Bhai', cursive;background-color:#35363A;color:white" class="form-control" id="short_description" maxlength="140" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+         <label for="exampleFormControlTextarea1">Server Invite</label>
+         <div class="input-group flex-nowrap">
+            <div class="input-group-prepend">
+               <span class="input-group-text" id="addon-wrapping">https://discord.gg/</span>
+            </div>
+            <input style="font-family: 'Baloo Bhai', cursive;background-color:#35363A;color:white" id="server_invite" type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="addon-wrapping">
+         </div>
+      </div>
+      <div class="form-group">
+         <label for="exampleFormControlInput1">Invite URL [<a onclick="window.open('https://discordapi.com/permissions.html') " href="#">Generate</a>]</label>
+         <input id="bot_invite" style="font-family: 'Baloo Bhai', cursive;background-color:#35363A;color:white" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+         <label for="exampleFormControlInput1">Website URL</label>
+         <input id="website" style="font-family: 'Baloo Bhai', cursive;background-color:#35363A;color:white" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+         <label for="exampleFormControlTextarea1">Detailed description of your bot * min. 300 chars(<a style="color:grey" onclick="window.open('https://markdown-it.github.io/') " > MARKDOWN </a>SUPPORTED)</label>
+         <textarea  id="long_description" style="font-family: 'Baloo Bhai', cursive;background-color:#35363A;color:white"  class="form-control" minlength="300" rows="10"></textarea>
+      </div>
+      <div class="form-group">
+         <label for="exampleFormControlInput1" >Others owners(Split using ",")</label>
+         <input type="text" id="bot_owners" style="font-family: 'Baloo Bhai', cursive;background-color:#35363A;color:white" class="form-control">
+      </div>
+      <div class="form-group">
+         <button id="addbot" class="btn btn-outline-success" onclick="add()">
+         Submit <i class="fas fa-location-arrow"></i>
+         </button>
+      </div>
+   </div> 
+ 
+</div>
+  </body>
+<script>
+  function Verify() {
+    var h1= document.getElementById("H1_msg")
+    const id = document.getElementById("Bot_id").value
+    var bot_id_input = document.getElementById("Bot_id")
+    var bot_id_form = document.getElementById("bot_id")
+    var response_message = document.getElementById("response_message")
+    var form = document.getElementById("form")
+    var form_verify = document.getElementById("form_verify")
+    if(!id) {
+      response_message.innerHTML = `<i style="color:red" class="fas fa-exclamation-triangle"></i> No ID Provided`   
+      bot_id_input.style.boxShadow= "0 0 10px #e86666";
+      bot_id_input.style.border= "1px solid #e86666";
+    }else {
+             $.post(
+              "/verify",
+              {
+                id:id,
+              },
+              function(data, status) {
+                if(data.msg != "Redirecting") {
+                  response_message.style.color = "red";
+                  
+                   response_message.innerHTML = `<i style="color:red" class="fas fa-exclamation-triangle"></i> ${data.msg}`   
+                }else {
+                  h1.innerHTML = "Register Bot"
+                  bot_id_form.value = `${id}`
+                  form.style.display = "initial"
+                  response_message.style.display= "none"
+                  form_verify.style.display = "none"
+                }
+              }
+            );       
+    }
+  
+  }
+  
+
+</script>
+
+
+</html>
