@@ -1,0 +1,327 @@
+body {
+  background:#232428;
+  color:#fff;
+  font-family: 'Roboto', sans-serif;
+  margin:0;
+}
+
+div#container {
+  display: table;
+  /* I want the whole search box
+     to be exactly this wide. */
+  width: 400px;
+  
+  margin: 50px auto 0;
+}
+div#container div.cell {
+  display: table-cell;
+}
+div#container div.cell:last-child {
+  /* Makes sure this cell is only wide enough
+     for the button label. */
+  width: 1px;
+}
+
+input[type=search], div.button {  
+  width: 100%;
+  height: 40px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input[type=search] {
+  margin: 0;
+  padding: 0 10px;
+
+  background-color: #f8f8f8;
+  border: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+div.button {
+  line-height: 40px;
+
+  margin: 0;
+  padding: 0 20px;
+
+  color: black;
+  background-color:white;
+  font-weight: bold;
+  
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  
+  white-space: nowrap;
+}
+div.button:hover{
+  background-color:#F1F1F9;
+}
+
+
+
+
+
+
+
+
+
+
+/* Icon Fade */
+#hvr-icon-fade {
+  position: absolute;
+  top: -90px;
+  left: 160px;
+  margin: -25px 0 0 -25px;
+  width: auto;
+  height: 30px;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer; 
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+#hvr-icon-fade #hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+#hvr-icon-fade:hover #hvr-icon, #hvr-icon-fade:focus #hvr-icon, #hvr-icon-fade:active #hvr-icon {
+  color: #0F9E5E;
+}
+
+/* Float */
+#hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+#hvr-float:hover, #hvr-float:focus, #hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+#top_voted{
+  font-weight: 50px;
+  text-align: center;
+  font-size:20px
+}
+
+
+
+/* Pulling in reset css and fonts http://seodesigns.com/projects/TD/css/reset.css */
+
+p {font-family: "Webly Sleek SemiLight",Helvetica-,droid sans,sans-serif;font-weight: normal;margin: 0 0 1rem;}
+.centerbox {
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%); /* IE 9 */
+-webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+width:620px;min-height:52px;z-index:2}
+.centerbox h1 {margin-bottom: 25px;font-size:36px;font-family: "Webly Sleek SemiLight";font-weight: normal;text-align: center;}
+.centerbox p.description {margin-bottom:40px;text-align: center;}
+.description a {text-decoration:none;}
+.main-input { background: #fff; height: 50px; width: 327px;color: #a7b1ab; border: 1px solid #cccccc; margin-bottom: 0px; -webkit-appearance: none; border-radius: 4px 0px 0px 4px; -moz-border-radius: 4px 0px 0px 4px; -webkit-border-radius: 4px 0px 0px 4px;display: inline-block;text-align: left;font-size: 16px; font-weight: 500; padding:0px 0px 0px 57px;font-size:16px;border-right:0px;background: #ffffff url("http://seodesigns.com/projects/TD/images/search.png") 18px 15px no-repeat;background-size:18px 18px;float:left;
+left:100px}
+.main-location {display: none;}
+#main-submit { background: #3cb13c;color: #fff; display: inline-block; font-size: 19px; font-weight: 500;text-align: center; cursor: pointer;margin-bottom: 0px; -webkit-appearance: none;
+border-radius: 0px 4px 4px 0px; -moz-border-radius: 0px 4px 4px 0px; -webkit-border-radius: 0px 4px 4px 0px;width:141px;height:50px;border: 0pxpadding-top:0px;float:left;}
+#main-submit:hover { background: #00a221; color: #fff !important; -webkit-appearance: none; }
+#main-submit-mobile {display: none;}
+footer { border-top: 0px;}
+.main-btn {display: inline-block;width:150px;height:50px;border: 1px solid #cccccc;padding:0px;position: relative;float:left;border-right:0px;background: #ffffff url("http://seodesigns.com/projects/TD/images/main-bullet.png") 122px 23px no-repeat;background-size:6px 6px;cursor: pointer;}
+.search-small {font-size:12px;margin:0px;color:#9B9B9B;position: absolute;top: 6px;left:16px;display: inline-block;width:80px;height:20px;text-align:left;}
+.search-large {font-size:16px;margin:0px;color:#4A4A4A;position: absolute;top: 19px;left:16px;display: inline-block;width:105px;height:20px;font-weight:900;text-align:left;}
+.main-form-container {height:50px;position: absolute; margin: 0 auto; left:25%}
+ul.search-description {width:150px;position: absolute; background: #fff;right:143px;top:55px;
+border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;padding:14px 0px;border: 1px solid #E5E5E5;display: none;
+-webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+}
+.search-description li {font-size:16px;color:#4A4A4A;font-weight:900;padding:6px 0px;display:block;padding-left:16px;cursor: pointer;}
+.search-description li:hover {background:#f8f8f8;}
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive css below */
+@media only screen and (max-width: 680px) {
+    .main-btn {border-radius: 0px 4px 4px 0px; -moz-border-radius: 0px 4px 4px 0px; -webkit-border-radius: 0px 4px 4px 0px;border-right:1px solid #cccccc;}
+    ul.search-description {right:0px;z-index:9999;}
+    .centerbox p.description {width:284px;margin:0 auto 40px auto;}
+    .centerbox {width:auto;transform: translate(-50%, -60%);
+    -ms-transform: translate(-50%, -60%); /* IE 9 */
+    -webkit-transform: translate(-50%, -60%); /* Chrome, Safari, Opera */
+    }
+    .main-form-container {width:477px}
+    #main-submit {display: none;}
+    #main-submit-mobile { background: #3cb13c;color: #fff; display:block; font-size: 19px; font-weight: 500;text-align: center; cursor: pointer;margin-bottom: 0px; -webkit-appearance: none;border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;width:141px;height:50px;border: 0px;padding-top:0px;float:none;border:0px;position: fixed;bottom: 0px;right:0px;width: 100%;z-index:1;}
+    #main-submit-mobile:hover { background: #00a221; color: #fff !important; -webkit-appearance: none; }
+    footer {padding-bottom:50px;}
+}
+
+@media only screen and (max-width: 515px) {
+    .main-input {width:210px;}
+    .main-form-container {width:360px}
+    .centerbox h1 {width:280px;margin:0 auto 15px auto;}
+    .centerbox {position: absolute;top:50%;left:50%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .cover {background: rgba(0, 0, 0, 0) url("seodesigns.com/projects/TD/images/background.jpg") no-repeat center -175px;}
+    .main-input {width: 185px;padding-left:42px;background: #ffffff url("http://seodesigns.com/projects/TD/images/search.png") 12px 15px no-repeat;background-size:18px 18px;}
+    .main-btn {width:108px;background: #ffffff url("http://seodesigns.com/projects/TD/images/main-bullet.png") 85px 23px no-repeat;background-size:6px 6px;}
+    .main-form-container {width:293px}
+    .search-small {left:13px;}
+    .search-large {left:13px;}
+}
+  #user_photo {
+  border-radius:2%;
+  width:200px;
+  boxShadow:0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  height:200px;
+}
+#description{
+  width:300px;
+  height:auto;
+}
+
+.flexsearch--wrapper {
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	overflow: hidden;
+	background: transparent;
+	margin: 0;
+	position: static;
+}
+	
+.flexsearch--form {
+	overflow: hidden;
+	position: relative;
+}
+	
+.flexsearch--input-wrapper {
+	padding: 0 66px 0 0; /* Right padding for submit button width */
+	overflow: hidden;
+}
+
+.flexsearch--input {
+  width: 500px;
+}
+
+/***********************
+ * Configurable Styles *
+ ***********************/
+.flexsearch {
+  padding: 0 25px 0 200px; /* Padding for other horizontal elements */
+}
+
+.flexsearch--input {
+  -webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+ 	height: 40px;
+  padding: 0 46px 0 10px;
+	border-color: #888;
+  border-radius: 35px; /* (height/2) + border-width */
+  margin-top: 15px;
+  color: #333;
+  font-family: 'Helvetica', sans-serif;
+	font-size: 20px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+	
+.flexsearch--submit {
+  position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 60px;
+	height: 60px;
+  padding: 0;
+  border: none;
+	margin-top: 20px; /* margin-top + border-width */
+  margin-right: 5px; /* border-width */
+	background: transparent;
+  color: #888;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.flexsearch--input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.flexsearch--input:focus.flexsearch--submit {
+ 	color: #333; 
+}
+
+.flexsearch--submit:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+	color: #888;  
+}
+
+input:-moz-placeholder {
+  color: #888
+}
+
+
+/****************
+ * Pretify demo *
+ ****************/
+
+#sidebar{
+  margin-top:10px;
+  border-radius:2%;
+  background:#7289DA;
+}
+
+.bg-blurple {
+  font-family: 'Roboto', sans-serif;
+  background: #7289DA;
+
+}
+
+.text-blurple {
+  color: #7289DA;
+}
+
+#logo {
+  width:40px;
+  border-radius:40px;
+}
+

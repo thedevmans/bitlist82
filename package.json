@@ -1,0 +1,53 @@
+{
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "cloudbotlist",
+  "version": "0.0.1",
+  "description": "A simple Node app built on Express, instantly up and running.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "cookies": "^0.7.3",
+    "crypto-random-string": "^3.0.0",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express.js": "^1.0.0",
+    "firebase": "^5.8.0",
+    "form-data": "^3.0.0",
+    "js-cookie": "^2.2.0",
+    "node-fetch": "^2.3.0",
+    "pug": "^2.0.4",
+    "request": "^2.88.0",
+    "canvas": "^2.6.1",
+"discord.js": "11.x",
+    "btoa": "^1.2.1",
+    "object-hash": "^2.0.1",
+    "canvas-constructor": "^3.1.0",
+    "random-name": "^0.1.2",
+    "express-rate-limit": "^5.0.0",
+    "rate-limit-redis": "^1.7.0",
+    "ioredis": "^4.15.1",
+    "cloudiscordlistapi": "^1.2.3",
+    "boom": "^7.3.0",
+    "gif-to-apng": "^0.1.2",
+    "download-file": "^0.1.5"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}

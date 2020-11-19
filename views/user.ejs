@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+
+      <script>
+         if (location.protocol != 'https:') {
+          location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+         }
+      </script>
+
+      <!-- Google Tag Manager -->
+
+      <!-- End Google Tag Manager -->
+      <% data.forEach(function(data) { %>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pickr-widget/dist/pickr.min.css"/>
+      <script src="https://cdn.jsdelivr.net/npm/pickr-widget/dist/pickr.min.js"></script>
+      <link rel="canonical" href="https://www.cloudlist.xyz/user/<%=data.val().owner_name%>">
+     
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO Geral -->
+  <title>Cloud List  | User <%=data.val().name%> </title>
+  <meta name="description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots">
+  <meta name="author" content="Bruninho">
+  <meta name="robots" content="index">
+  <meta name="keywords" content="<%=data.val().name%>,lista, melhores, bots, discord, música, moderação, league of legends, jogos, economia, brasileiros, português, discordapp, bots para discord,Cloud bot List,cloud list,cloud bot list,bots for discord,game,tags,tag,fun,webdashboard,discord bot list,dc bot list,bot list,NSFW,moderation,english">
+  <link rel="shortcut icon" href="https://images.discordapp.net/avatars/<%=data.val().owner%>/<%=data.val().owner_avatar%>.png?size=512" type="image/x-icon">
+
+  <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="Cloud List  | User <%=data.val().name%>">
+  <meta itemprop="description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots">
+  <meta itemprop="image" content="https://images.discordapp.net/avatars/<%=data.val().owner%>/<%=data.val().owner_avatar%>.png?size=512">
+  <link href="https://plus.google.com/+SuaPagina" rel="publisher">
+  
+  <!-- Open Graph Facebook -->
+  <meta property="og:title" content="Cloud List  | User <%=data.val().name%>">
+  <meta property="og:description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots"/>
+  <meta property="og:url" content="https://www.cloudlist.xyz">
+  <meta property="og:site_name" content="Cloud List  | User <%=data.val().name%>"/>
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.discordapp.net/avatars/<%=data.val().owner%>/<%=data.val().owner_avatar%>.png?size=512">
+
+  <!-- Twitter -->
+  <meta name="twitter:title" content="Cloud List  | User <%=data.val().name%>">
+  <meta name="twitter:description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots">
+  <meta name="twitter:url" content="https://www.cloudlist.xyz">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://images.discordapp.net/avatars/<%=data.val().owner%>/<%=data.val().owner_avatar%>.png?size=512">
+     <!-- <meta name="twitter:creator" content="@estevanmaito"> -->
+  <meta name="twitter:site" content="@CloudList">
+  <meta name="application-name" content="Cloud List  | User <%=data.val().name%>"/>
+  <meta name="msapplication-TileColor" content="#7289da" />
+  <meta name="msapplication-TileImage" content="https://images.discordapp.net/avatars/<%=data.val().owner%>/<%=data.val().owner_avatar%>.png?size=512" />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+      <% }); %>  
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.0/css/bulma.min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Anton|Baloo+Bhai|Bowlby+One+SC|Concert+One|Francois+One|Fredoka+One|Passion+One|Patua+One|Permanent+Marker&display=swap" rel="stylesheet">
+      <link rel="canonical" href="https://cloudbotlist.glitch.me">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="/index.css">
+   </head>
+   <body>
+<link rel="shortcut icon" href="https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Floogo.png?v=1580604768550" type="image/x-icon">      <nav style="color:white;font-size:19px;" class="navbar navbar-expand-md" id="navbar">
+<a style="background:transparent;font-size:35px;text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);" class="navbar-brand" href="/">Rainy List</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+            aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+            <ul class="navbar-nav ml-auto">
+               <li  class="nav-item active">
+                  <a  class="nav-link" href="/server">
+                  <i class="fab fa-discord"></i> Join Discord</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/add">
+                  <i class="fas fa-plus-square"></i> Add Bot</a>
+               </li>
+               <li class="nav-item">
+              <a class="nav-link" href="https://www.patreon.com/cloudlist"><i class="fab fa-patreon"></i> Patreon</a>
+              </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="https://www.npmjs.com/package/cloud-list"><img src="https://img.icons8.com/windows/32/000000/npm.png"> Npm Cloudlist</a>
+                     <a class="dropdown-item" href="/apidocs"><img src="https://img.icons8.com/windows/32/000000/api.png"> Api V¹</a>
+                     <a class="dropdown-item" href="/tos"><img src="https://img.icons8.com/dusk/32/000000/rules.png"> TOS</a>
+                     <a class="dropdown-item" href="/markdown"><img src="https://img.icons8.com/dusk/32/000000/ball-point-pen.png"> Markdown</a>       
+                    <a class="dropdown-item" href="/certified"><img src="https://img.icons8.com/dusk/32/000000/trophy.png"> Certified</a> 
+                  </div>
+               </li>
+               <li id="login" class="nav-item">
+                  <a class="nav-link" id="login_discord" href="<%=url%>">
+                  <i class="fas fa-sign-in-alt"></i> Login With Discord</a>
+               </li>
+               <li id="drop" class="nav-item dropdown" style="display: initial;">
+                  <a class="nav-link dropdown-toggle" id="user_drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-user"></i> <%=status.username%>#<%=status.discriminator%></a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4" style="background-color;white;;cursor:pointer;color:black">
+                     <a style="color:black" class="dropdown-item" href="/mybots" style="color: white"><i class="fas fa-database"></i> My Bots</a>
+                     <a style="color:black"  class="dropdown-item" href="/user" style="color: white"><i class="fas fa-user"></i> Profile</a>
+                     <a style="color:black"  class="dropdown-item" href="/api/keys" style="color: white"><i class="fas fa-key"></i> Api Keys</a>
+                     <a style="color:black"  class="dropdown-item" href="/myapikeys" style="color: white"><i class="fas fa-key"></i> My Api Keys</a>
+                     <a style="color:black"  class="dropdown-item" href="/admin" style="color: white"><i class="fas fa-user-shield"></i> Bots</a>
+                     <div class="dropdown-divider"></div>
+                     <a style="color:black"  class="dropdown-item" href="logout" style="color: white"><i class="fas fa-sign-out-alt"></i> Log out</a>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <style>
+         .nav-item {
+         cursor:pointer;
+         }
+         #navbar {
+         height: 70px;
+         background: transparent; // Transparent initial setting
+         display: block;
+         color:white;
+         width: 100%;
+         z-index: 99999;
+         transition: all ease .5s;
+         }
+         #navbar.shrink {
+         opacity:95%;
+         height: auto;
+         color:white;
+         transition: all ease .5s;
+         background-color:#2c2f33;
+         }
+         a {
+         font-size:19px;
+         margin-right:10px;
+         text-decoration: none;
+         color: white;
+         transition: 0.2s color;
+         }
+         a:hover {
+         color: white;
+         background-color: #1F1F1F;
+         }
+      </style>
+      <div style="width:100%;height:100%;background-color:#2f3233;color:white;" id="container">
+         <div id ="animated_background" style="width:100%;height:100%;background-image: url(https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Flogo.png?v=1578479749487),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) !important;background-repeat: repeat;background-position: center;background-attachment: scroll;background-size: 21%;background-color: #151617;animation-name: moveanimation;animation-duration: 25s;animation-iteration-count: infinite;animation-timing-function: ease-in-out;">
+            <a id="Edit_background" onclick="edit()" style="display:none;padding:4px;border-radius:5px;position:relative;margin-left:10px;top:10px;font-size:20px;color:#00ff82;"> <i class="fas fa-pen"></i> Edit </a><br> <br>
+            <div style="display:none;border:1px solid white;" class='color-picker' id="color-picker"></div>
+            <script>
+               function edit() {
+                 var colorpicker = document.getElementById("color-picker")
+                 var color_picker_class = document.getElementsByClassName("pickr")[0];
+                   const pickr = new Pickr({
+                       el: '.color-picker',
+                       default: "",
+                       comparison: true,
+                       components: {
+                           preview: false,
+                           opacity: false,
+                           hue: true,
+                           interaction: {
+                               input: true,
+                               save: true
+                           }
+                       },
+                       onChange(hsva, instance) {
+                         
+               	const hex = hsva.toHEX();
+                 const rgb = hsva.toRGBA();
+                 const y = 0.2126*rgb[0] + 0.7152*rgb[1] + 0.0722*rgb[2]
+                 const color2 = '#' + hex[0] + hex[1] + hex[2];
+                 var background = document.getElementById("animated_background")
+                background.style.backgroundColor = color2;
+                       },
+                     onSave(hsva, instance) {
+                	const hex = hsva.toHEX();
+                 const rgb = hsva.toRGBA();
+                 const color = '#' + hex[0] + hex[1] + hex[2];
+               var key = Cookies.get('token')
+               
+               if(key) {
+               fetch('https://discordapp.com/api/users/@me', {
+               	headers: {
+               		Authorization: `Bearer ${key}`
+               	}
+               })
+               	.then(res => res.json())
+               	.then(response => {
+               		const { username, discriminator } = response;
+                         $.post("/EditBackground",
+                         {
+                           id:response.id,
+                           Background:color,
+                         },
+                       function(data,status){
+                       });                            
+               	})
+               	.catch(console.error);     
+               }
+                     
+                   }
+                   })
+                 
+               
+               
+               }
+                         
+                         
+            </script>
+            <style>
+               @keyframes moveanimation {
+               from {
+               background-position: 0 0;
+               }
+               to {
+               background-position: 100% -100%;
+               }
+               }
+            </style>
+            <div class="container has-text-centered">
+               <div id="user_info">
+                  <img class="blob" id="Owner_Avatar" style="box-shadow:0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);border-radius: 50%;margin: auto;margin-top: 50px;left: 0;right: 0;bottom: 0;" class="avatar" ><br>
+                  <h1 id="Name" style="color:#615ff3" class="title is-2 inline"></h1>
+                  <h2 id="descriminator" style="color:#615ff3" class="subtitle is-2 inline"></h2>
+                  <br>
+               </div>
+               <a id="User_rank" style="text-align:center;border-radius:5px;cursor:default;background-color:#7289da;padding:4px;font-size:20px;color:white;"> </a><br><br>
+               <a style="font-size:20px;cursor:default;border-radius:5px;background-color:#7289da;padding:4px"  id="votes">Total: </a> <br><br>
+            </div>
+         </div>
+      </div>
+      <h1 style="text-align: center; font-size:30px;margin-top:120px;"><i  style="color:#00ff82" class="fas fa-list-alt"></i> Owned bots: <%=data.numChildren()%>  </h1>
+      <div style="background-color:#252728" class="section no-background">
+         <div class="container">
+            <div class="tile is-ancestor">
+               <% data.forEach(function(data) { %>
+               <div class="tile is-parent is-4 has-text-centered" >
+                  <article class="tile is-child box" style="box-shadow:0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);" id="hvr-float">
+                     <img class="avatar" style="box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);border-radius: 5%;position: relative;margin: auto;top: 0;left: 0;right: 0;bottom: 0;" src="https://cdn.discordapp.com/avatars/<%=data.val().bot%>/<%=data.val().avatar%>.png" /><br> <br>
+                     <span style="margin-top:40px;color:black;"class="title"><%=data.val().name%></span><br><br>
+                     <p style="color:black"> <%=data.val().short_description%></p>
+                     <br><br>
+                     <a id="<%=data.val().name%>" style="text-align:center;border-radius:5px;cursor:default;background-color:#7289da;padding:4px;font-size:25px;"> </a> <br> <br>
+                     <a style="text-align:center;border-radius:5px;cursor:default;background-color:#7289da;padding:4px;font-size:25px;"><i style="color:#00ff82" class="fas fa-thumbs-up"></i> Votes: <%=data.val().votes * -1 %> </a> <br> <br>
+                     <style>
+                        .blob {
+                        border-radius: 50%;
+                        margin: 10px;
+                        box-shadow: 0 0 0 0 rgba(255,255,255, 0.9);
+                        transform: scale(4);
+                        animation: pulse 2s infinite;
+                        }
+                        @keyframes pulse {
+                        0% {
+                        transform: scale(0.95);
+                        box-shadow: 0 0 0 0 rgba(255,255,255, 0.9);
+                        }
+                        70% {
+                        transform: scale(1);
+                        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+                        }
+                        100% {
+                        transform: scale(0.95);
+                        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                        }
+                        }                   
+                     </style>
+                     <script>
+                        var guilds = document.getElementById("<%=data.val().name%>")
+                        if(!`<%=data.val().guilds_count%>`) {
+                            guilds.style.display = "none"
+                        }else {
+                           guilds.innerHTML = `<i  style="cursor:default;color:#00ff82;margin-top:10px;" class="fas fa-users"></i> Guilds: <%=data.val().guilds_count%>`
+                          }
+                        
+                     </script>                      
+                     <a onclick="window.open('/bots/<%=data.val().bot%>')"  id="button_main" style="font-size:20px;margin-top:30px;text-align:center;border:none;" type="button" class="btn btn-info"><i style="color:white;" class="fas fa-id-card"></i> View</a> 
+                     <a onclick="window.open('<%=data.val().bot_invite%>')"  id="button_main" style="font-size:20px;margin-top:30px;text-align:center;border:none;" type="button" class="btn btn-info"><i class="fas fa-user-plus"></i> Add</a>
+                  </article>
+               </div>
+               <% }); %> 
+            </div>
+         </div>
+      </div>
+      <div id="footer">
+  <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Cloudlist.xyz Cloud bot list is an online platform that lists bots for discord. Cloud Bot List is not an affiliate and does not belong to discord.app</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Tags</h6>
+            <ul class="footer-links">
+              <li><a href="/tag/moderation">Moderation</a></li>
+              <li><a href="/tag/nsfw">NSFW</a></li>
+              <li><a href="/tag/fun">fun</a></li>
+              <li><a href="/tag/music">music</a></li>
+              <li><a href="/tag/anime">anime</a></li>
+              <li><a href="/tag/webdashboard">web-dashboard</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="/add">Add bot</a></li>
+              <li><a href="/list?page=1">list</a></li>
+              <li><a href="/tos">TOS</a></li>
+              <li><a href="/markdown">Markdown guide</a></li>
+              <li><a href="/apidocs">Api docs</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">CloudBotList</a>.
+              <br>
+              <a href="https://www.dmca.com/Protection/Status.aspx?ID=8f0b276b-9b91-49f4-aa29-528f6678161e&refurl=https://www.cloudlist.xyz/" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w100-5x1-10.png?ID=8f0b276b-9b91-49f4-aa29-528f6678161e"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+      </div>
+   </body>
+</html>
+<style>
+   hr.new1 {
+   background: none !important;
+   border-top: 1px solid #252728;
+   }
+</style>
+<script>
+   var allvotes = 0
+     
+       window.onload = async function() {
+          <% user.forEach(function(data) { %>
+             var background = document.getElementById("animated_background")
+             if(`<%=data.val().background%>` != null) {
+               background.style.backgroundColor = `<%=data.val().background%>`
+             }else {
+               
+               background.style.backgroundColor = `black`
+             }
+         <% }); %> 
+         
+         let token = Cookies.get('token');
+   var drop = document.getElementById("drop")
+   var login = document.getElementById("login")
+   var user_drop = document.getElementById("user_drop")
+   var edit = document.getElementById("Edit_background")
+   if (!token) {
+         drop.style.display = "none"
+     edit.style.display = "none"
+   }
+       else {
+   				fetch('https://discordapp.com/api/users/@me', {
+   					headers: {
+   						Authorization: `Bearer ${token}`
+   					}
+   				})
+   					.then(res => res.json())
+   					.then(response => {
+   						const { username, discriminator } = response;
+             
+             <% user.forEach(function(data) { %>
+   
+              if(`<%=data.val().Certfied%>` === "true") { 
+                if(`<%=data.val().user_id%>` === `${response.id}`) {
+   
+                  edit.style.display = "initial"
+                }else {
+                  edit.style.display = "none"
+                }
+              }else {
+                edit.style.display = "none"
+              }
+              <% }); %> 
+                 drop.style.display = "initial"
+                 user_drop.innerHTML = `${username}#${discriminator}`
+                 login.style.display="none"
+   					})
+   					.catch(console.error);
+       }
+   
+         
+         
+         <% data.forEach(function(data) { %>
+         allvotes += <%=data.val().votes%> * -1
+           document.getElementById("votes").innerHTML = ` Total Votes: ${allvotes} <i style="color:#00ff82;margin-top:10px;" class="fas fa-arrow-circle-up"></i> `
+         var img_owner = document.getElementById("Owner_Avatar")
+         var owner_name = document.getElementById("Name")
+         var owner_descriminator = document.getElementById("descriminator")
+         owner_descriminator.innerHTML = `#<%=data.val().owner_discriminator%>`
+         owner_name.innerHTML = `<%=data.val().owner_name%>`
+         img_owner.setAttribute("src",`https://cdn.discordapp.com/avatars/<%=data.val().owner%>/<%=data.val().owner_avatar%>.png`)
+       <% }); %> 
+         
+            <% user.forEach(function(data) { %>
+         if(`<%=data.val().Certfied%>` === "true") {
+           var rank = document.getElementById("User_rank")
+           rank.innerHTML = `<i style="color:#d4c078;margin-top: 3px;" class="fas fa-award"></i> Certfied`
+         }
+         if(`<%=data.val().Approver%>` === "true") {
+           var rank = document.getElementById("User_rank")
+           rank.innerHTML = ` <i style="color:#00ff82;margin-top: 3px;" class="fa fa-check"></i> Approver`
+         }
+         if(`<%=data.val().owner%>` === "true") {
+            var rank = document.getElementById("User_rank")
+           rank.innerHTML = ` <i style="color:#d47878;margin-top: 3px;" class="fas fa-crown"></i> Founder`       
+         }
+         if(`<%=data.val().owner%>` != "true" && `<%=data.val().Certfied%>` !="true" && `<%=data.val().Approver%>` != "true") {
+           var rank = document.getElementById("User_rank")
+           rank.style.display = "none"
+         }
+          <% }); %> 
+       }
+   $(document).ready(function() {
+   
+         
+     $(window).scroll(function() {
+       if ($(window).scrollTop() >= 100) {
+         $('#navbar').addClass('shrink');
+       }else {           
+         $('#navbar').removeClass('shrink');
+   }
+     });
+      });
+</script>
+<style>
+   .vert-move {
+   -webkit-animation: mover 1s infinite  alternate;
+   animation: mover 1s infinite  alternate;
+   }
+   .vert-move {
+   -webkit-animation: mover 1s infinite  alternate;
+   animation: mover 1s infinite  alternate;
+   }
+   @-webkit-keyframes mover {
+   0% { transform: translateY(0); }
+   100% { transform: translateY(-10px); }
+   }
+   @keyframes mover {
+   0% { transform: translateY(0); }
+   100% { transform: translateY(-10px); }
+   }
+   @font-face {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+   }
+   :root {
+   --status: #999999;
+   }
+   @font-face {
+   font-family: 'Hind';
+   src: url('https://fonts.gstatic.com/s/hind/v8/5aU69_a8oxmIdGl4BA.woff2');
+   }
+</style>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <script>
+         if (location.protocol != 'https:') {
+          location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+         }
+      </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO Geral -->
+  <title>Rainy List | Bots </title>
+  <meta name="description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots">
+  <link rel="canonical" href="https://www.cloudlist.xyz">
+  <meta name="author" content="Bruninho">
+  <meta name="robots" content="index">
+  <meta name="keywords" content="lista, melhores, bots, discord, música, moderação, league of legends, jogos, economia, brasileiros, português, discordapp, bots para discord,Cloud bot List,cloud list,cloud bot list,bots for discord,game,tags,tag,fun,webdashboard,discord bot list,dc bot list,bot list,NSFW,moderation,english">
+
+  <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="Cloud List  | Cloud Bot List">
+  <meta itemprop="description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots">
+  <meta itemprop="image" content="https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Floogo.png?v=1580604768550">
+  <link href="https://plus.google.com/+SuaPagina" rel="publisher">
+  
+  <!-- Open Graph Facebook -->
+  <meta property="og:title" content="Cloud List  | Cloud Bot List">
+  <meta property="og:description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots"/>
+  <meta property="og:url" content="https://www.cloudlist.xyz">
+  <meta property="og:site_name" content="Cloud Bot List"/>
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Floogo.png?v=1580604768550">
+
+  <!-- Twitter -->
+  <meta name="twitter:title" content="Cloud List  | Cloud Bot List">
+  <meta name="twitter:description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots">
+  <meta name="twitter:url" content="https://www.cloudlist.xyz">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Floogo.png?v=1580604768550">
+  <!-- <meta name="twitter:creator" content="@estevanmaito"> -->
+  <meta name="twitter:site" content="@CloudList">
+     
+     
+  <meta name="application-name" content="Cloud Bot List"/>
+  <meta name="msapplication-TileColor" content="#7289da" />
+  <meta name="msapplication-TileImage" content="https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Floogo.png?v=1580604768550" />
+<link rel="shortcut icon" href="https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Floogo.png?v=1580604768550" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Anton|Baloo+Bhai|Bowlby+One+SC|Concert+One|Francois+One|Fredoka+One|Passion+One|Patua+One|Permanent+Marker&display=swap" rel="stylesheet">
+      <link rel="canonical" href="https://cloudbotlist.glitch.me">
+      <link href="https://fonts.googleapis.com/css?family=Anton|Baloo|Baloo+Bhai|Concert+One|Fjalla+One|Fredoka+One|Fugaz+One|Patua+One|Press+Start+2P|Teko&display=swap" rel="stylesheet">
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-P7Q7WX2');
+      </script>
+      <!-- End Google Tag Manager -->
+
+
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+      <title>CloudList || Api docs </title>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#config-web-app -->      
+      <!-- Compiled and minified CSS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="shortcut icon" href="https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Flogo.png?v=1572216997039" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <script src="https://raw.github.com/mongodb/js-bson/master/browser_build/bson.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <link rel="stylesheet" href="/index.css">
+      <link rel="stylesheet"
+         href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/default.min.css">
+      <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+   </head>
+   <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7Q7WX2"
+         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->  
+      <link rel="shortcut icon" href="https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Faaee.jpg?v=1579489039463" type="image/x-icon">
+      <nav style="color:white;font-size:19px;" class="navbar navbar-expand-md" id="navbar">
+<a style="background:transparent;font-size:35px;text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);" class="navbar-brand" href="/">Rainy List</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+            aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+            <ul class="navbar-nav ml-auto">
+               <li  class="nav-item active">
+                  <a  class="nav-link" href="/server">
+                  <i class="fab fa-discord"></i> Join Discord</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/add">
+                  <i class="fas fa-plus-square"></i> Add Bot</a>
+               </li>
+               <li class="nav-item">
+              <a class="nav-link" href="https://www.patreon.com/cloudlist"><i class="fab fa-patreon"></i> Patreon</a>
+              </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="https://www.npmjs.com/package/cloud-list"><img src="https://img.icons8.com/windows/32/000000/npm.png"> Npm Cloudlist</a>
+                     <a class="dropdown-item" href="/apidocs"><img src="https://img.icons8.com/windows/32/000000/api.png"> Api V¹</a>
+                     <a class="dropdown-item" href="/tos"><img src="https://img.icons8.com/dusk/32/000000/rules.png"> TOS</a>
+                     <a class="dropdown-item" href="/markdown"><img src="https://img.icons8.com/dusk/32/000000/ball-point-pen.png"> Markdown</a>       
+                    <a class="dropdown-item" href="/certified"><img src="https://img.icons8.com/dusk/32/000000/trophy.png"> Certified</a> 
+                  </div>
+               </li>
+               <li id="login" class="nav-item">
+                  <a class="nav-link" id="login_discord" href="<%=url%>">
+                  <i class="fas fa-sign-in-alt"></i> Login With Discord</a>
+               </li>
+      
+               <li id="drop" class="nav-item dropdown" style="display: initial;">
+                  <a class="nav-link dropdown-toggle" id="user_drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-user"></i></a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4" style="background-color;white;;cursor:pointer;color:black">
+                     <a style="color:black" class="dropdown-item" href="/mybots" style="color: white"><i class="fas fa-database"></i> My Bots</a>
+                     <a style="color:black"  class="dropdown-item" href="/user" style="color: white"><i class="fas fa-user"></i> Profile</a>
+                     <a style="color:black"  class="dropdown-item" href="/api/keys" style="color: white"><i class="fas fa-key"></i> Api Keys</a>
+                     <a style="color:black"  class="dropdown-item" href="/myapikeys" style="color: white"><i class="fas fa-key"></i> My Api Keys</a>
+                     <a style="color:black"  class="dropdown-item" href="/admin" style="color: white"><i class="fas fa-user-shield"></i> Bots</a>
+                     <div class="dropdown-divider"></div>
+                     <a style="color:black"  class="dropdown-item" href="logout" style="color: white"><i class="fas fa-sign-out-alt"></i> Log out</a>
+                  </div>
+               </li>
+   
+            </ul>
+         </div>
+      </nav>
+      <style>
+         .nav-item {
+         cursor:pointer;
+         }
+         #navbar.shrink {
+         opacity:95%;
+         height: auto;
+         transition: all ease .5s;
+         background-color:#313336;
+         }
+         a {
+         font-size:19px;
+         margin-right:10px;
+         text-decoration: none;
+         color: white;
+         transition: 0.2s color;
+         }
+         a:hover {
+         color: white;
+         background-color: #1F1F1F;
+         }
+      </style>
+      <h1 style="text-align:center;margin-top:40px;">
+         API DOCS
+      </h1>
+      <div class="container" style="color:#e8e6e3;;background-color:#181a1b;margin-top:100px; border-radius: 2px;font-family: 'Baloo Bhai', cursive;">
+         <h1 style="color:#cfcbc4;text-align:center;padding-top: 15px;">
+            CloudList - API Docs
+         </h1>
+         <div class="container">
+            <h2>
+               Getting Started
+            </h2>
+            All post request types must be accompanied with authorization (your bot api key). You can create a new key <a style="color:green" href="/api/keys">here</a>.
+            <br>
+            All post requests must be made through <code style="margin-top:10px;color:#CF7C85;border-radius: 5px;font-family: 'Baloo Bhai', cursive;  letter-spacing: 2px;border:solid 1px #CF7C85;padding:4px;">https://www.cloudlist.xyz/api/</code>
+            <br>
+            <br>
+            <h2>
+               Posting Guild Count
+            </h2>
+            To post your bot's guild count,you will need to <strong>POST</strong> request to <code style="margin-top:10px;color:#CF7C85;border-radius: 5px;font-family: 'Baloo Bhai', cursive;  letter-spacing: 2px;border:solid 1px #CF7C85;padding:4px;">https://www.cloudlist.xyz/api/stats/:id</code>
+            <br>
+            <br>
+            <h5>
+               Where:
+            </h5>
+            <p>
+               <br>
+               <strong>=> Id: </strong><code style="margin-top:10px;color:#CF7C85;border-radius: 5px;font-family: 'Baloo Bhai', cursive;  letter-spacing: 2px;border:solid 1px #CF7C85;padding:4px;">Your Bot Id</code>
+            </p>
+            <p>
+               <br>
+               <strong>=> Authorization: </strong><code style="margin-top:10px;color:#CF7C85;border-radius: 5px;font-family: 'Baloo Bhai', cursive;  letter-spacing: 2px;border:solid 1px #CF7C85;padding:4px;">Bot Api Key</code>
+            </p>
+            <br>
+            <br>
+            <h2>
+               Simple Example using node-fetch
+            </h2>
+            Run <code>npm i node-fetch</code> in your node.js console
+            <br>
+            <p>Then All you need to do is paste this code: </p>
+            <br>
+            <br>
+            <pre style="width:auto;height:300px;background-color:#c1c1c1"><code style="width:auto;height:300px; background: #c1c1c1" class="JavaScript">
+    fetch("https://www.cloudlist.xyz/api/stats/:BOT_ID", {
+      method: "POST",
+      <br>
+      headers: {
+      <br>
+        'Authorization': API_TOKEN,
+        <br>
+        "Content-Type": "application/json",
+        <br>
+      },
+      <br>
+      body:JSON.stringify({count:client.guilds.size}),
+      <br>
+    })
+    <br>
+      .then(res => res.json())
+      <br>
+      .then(async response => {
+      <br>
+        console.log(response)
+        <br>
+    })
+ <br>
+ <br>
+ //Sends {Success: "true",bot:Count}
+    </code></pre>
+            <br>
+            <h2>
+               Getting Bot Information
+            </h2>
+            To get your bot's information,you will need to <strong>GET</strong> request to <code style="margin-top:10px;color:#CF7C85;border-radius: 5px;font-family: 'Baloo Bhai', cursive;  letter-spacing: 2px;border:solid 1px #CF7C85;padding:4px;">https://www.cloudlist.xyz/api/bot/:id</code>
+            <br>
+            <br>
+            <h5>
+               Where:
+            </h5>
+            <p>
+               <br>
+               <strong>=> Id: </strong><code style="margin-top:10px;color:#CF7C85;border-radius: 5px;font-family: 'Baloo Bhai', cursive;  letter-spacing: 2px;border:solid 1px #CF7C85;padding:4px;">Your Bot Id</code>
+            </p>
+            <p>
+               <br>
+               <strong>=> Authorization: </strong><code style="margin-top:10px;color:#CF7C85;border-radius: 5px;font-family: 'Baloo Bhai', cursive;  letter-spacing: 2px;border:solid 1px #CF7C85;padding:4px;">Bot Api Key</code>
+            </p>
+            <br>
+            <br>
+            <h2>
+               Simple Example using node-fetch
+            </h2>
+            Run <code>npm i node-fetch</code> in your node.js console
+            <p>Then All you need to do is paste this code: </p>
+            <br>
+            <br>
+            <pre style="width:auto;height:300px;background-color:#c1c1c1"><code style="width:auto;height:300px; background: #c1c1c1" class="JavaScript">
+    fetch("https://www.cloudlist.xyz/api/bot/:BOT_ID", {
+    <br>
+      method: "GET",
+      <br>
+      headers: {
+      <br>
+        'Authorization': API_TOKEN,
+        <br>
+        "Content-Type": "application/json",
+        <br>
+      },
+      <br>
+    })
+    <br>
+      .then(res => res.json())
+      <br>
+      .then(async response => {
+      <br>
+        console.log(response)
+        <br>
+    })
+ <br>
+ <br>
+ //Sends{ success: 'true',votes: amount of votes that your bot has,name: Bot name,library: 'Bot library,prefix: bot prefix }
+</code></pre>
+            <br>
+            <h2>
+               Getting Users that voted for your bot
+            </h2>
+            To get Users that voted for your bot,you will need to <strong>GET</strong> request to <code style="margin-top:10px;color:#CF7C85;border-radius: 5px;font-family: 'Baloo Bhai', cursive;  letter-spacing: 2px;border:solid 1px #CF7C85;padding:4px;">https://www.cloudlist.xyz/api/bot/vote/:id</code>
+            <br>
+            <br>
+            <h5>
+               Where:
+            </h5>
+            <p>
+               <br>
+               <strong>=> Id: </strong><code style="margin-top:10px;color:#CF7C85;border-radius: 5px;font-family: 'Baloo Bhai', cursive;  letter-spacing: 2px;border:solid 1px #CF7C85;padding:4px;">Your Bot Id</code>
+            </p>
+            <p>
+               <br>
+               <strong>=> Authorization: </strong><code style="margin-top:10px;color:#CF7C85;border-radius: 5px;font-family: 'Baloo Bhai', cursive;  letter-spacing: 2px;border:solid 1px #CF7C85;padding:4px;">Bot Api Key</code>
+            </p>
+            <br>
+            <br>
+            <h2>
+               Simple Example using node-fetch
+            </h2>
+            Run <code>npm i node-fetch</code> in your node.js console
+            <p>Then All you need to do is paste this code: </p>
+            <br>
+            <br>
+            <pre style="width:auto;height:300px;background-color:#c1c1c1"><code style="width:auto;height:300px; background: #c1c1c1" class="JavaScript">
+    fetch("https://www.cloudlist.xyz/api/bot/vote/:BOT_ID", {
+    <br>
+      method: "GET",
+      <br>
+      headers: {
+      <br>
+        'Authorization': API_TOKEN,
+        <br>
+        "Content-Type": "application/json",
+        <br>
+      },
+      <br>
+    })
+    <br>
+      .then(res => res.json())
+      <br>
+      .then(async response => {
+      <br>
+        console.log(response)
+        <br>
+    })
+ <br>
+ <br>
+ //Sends { 'User_ID': { vote: AMOUNT OF VOTES } } 
+</code></pre>
+         </div>
+         <style>
+            pre { white-space: pre; height: 100px; overflow: auto; }
+            code { white-space: nowrap;}
+            textarea {
+            height: 240px !important;
+            }
+            p {
+            font-weight: bold;
+            }
+            #snowflakeContainer {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            display: none;
+            }
+            .snowflake {
+            position: fixed;
+            background-color: #CCC;
+            user-select: none;
+            z-index: 1000;
+            pointer-events: none;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            }
+         </style>
+         <div id="snowflakeContainer">
+            <span class="snowflake"></span>
+         </div>
+         <script>
+            window.onload = async function() { 
+            // Get the Long type
+            let token = Cookies.get('token');
+            var drop = document.getElementById("drop")
+            var login = document.getElementById("login")
+            var user_drop = document.getElementById("user_drop")
+            if (!token) {
+                drop.style.display = "none"
+            }
+              else {
+            		fetch('https://discordapp.com/api/users/@me', {
+            			headers: {
+            				Authorization: `Bearer ${token}`
+            			}
+            		})
+            			.then(res => res.json())
+            			.then(response => {
+            				const { username, discriminator } = response;
+                        drop.style.display = "initial"
+                      console.log(response)
+                        user_drop.innerHTML = `${username}#${discriminator}`
+                        login.style.display="none"
+            			})
+            			.catch(console.error);
+              }
+            }
+            
+            function submitUserForm() {
+            var bot = window.location.href.split("/vote/")[1]
+            
+            //CHECK IF IS ALREADY A COMMAND WITH THE SAME NAME 
+              var key = Cookies.get('token')
+            
+              if(key) {
+            		fetch('https://discordapp.com/api/users/@me', {
+            			headers: {
+            				Authorization: `Bearer ${key}`
+            			}
+            		})
+            			.then(res => res.json())
+            			.then(response => {
+            				const { username, discriminator } = response;
+                        $.post("/vote",
+                        {
+                          id:response.id,
+                          bot:bot,
+                        },
+                      function(data,status){
+                          window.location = data;
+                      });                            
+            			})
+            			.catch(console.error);     
+            }
+            }
+            
+            
+         </script>
+      </div>
+      <style>
+         .text-xs-center {
+         text-align: center;
+         }
+         .g-recaptcha {
+         display: inline-block;
+         }
+         .button::after {
+         height: 100%;
+         left: -36%;
+         top: 0;
+         width: 0;
+         transform: skew(50deg);
+         transform-origin: top left;
+         transition: all 400ms ease;
+         }
+         .button:hover::after {
+         height: 100%;
+         width: 136%;
+         }
+         .button {
+         overflow: hidden;
+         font-size: 14px;
+         padding: 8px 20px;
+         margin-right: 12px;
+         border-radius: 4px;
+         border: 2px solid;
+         text-decoration: none;
+         font-weight: 500;
+         position: relative;
+         background: transparent;
+         text-transform: uppercase;
+         transition: all 400ms ease;
+         cursor: pointer;
+         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.26);
+         color: #00ff8c;
+         border-color: #00ff8c;
+         display: block;
+         margin: 8px auto;
+         text-align: center;
+         width: calc(100%/4);
+         }
+         .small {
+         width: calc(4*100%/5);
+         }
+         .button::before,
+         .button::after {
+         content: "";
+         position: absolute;
+         z-index: -1;
+         background: #00ff8c;
+         }
+         .button:hover {
+         color: white;
+         }
+      </style>
+   </body> 

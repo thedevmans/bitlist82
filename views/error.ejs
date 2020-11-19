@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <script>
+if (location.protocol != 'https:') {
+ location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}
+</script>
+  <!-- Codificação caracteres da página -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO Geral -->
+  <title>Cloud List | Error </title>
+  <meta name="description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots">
+  <link rel="canonical" href="https://www.cloudlist.xyz">
+  <meta name="author" content="Bruninho">
+  <meta name="robots" content="index">
+  <meta name="keywords" content="lista, melhores, bots, discord, música, moderação, league of legends, jogos, economia, brasileiros, português, discordapp, bots para discord,Cloud bot List,cloud list,cloud bot list,bots for discord,game,tags,tag,fun,webdashboard,discord bot list,dc bot list,bot list,NSFW,moderation,english">
+
+  <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="Cloud List | Error">
+  <meta itemprop="description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots">
+  <meta itemprop="image" content="https://cdn.discordapp.com/attachments/644560294869205022/662805739852791825/cloudlistbg.png">
+  <link href="https://plus.google.com/+SuaPagina" rel="publisher">
+  
+  <!-- Open Graph Facebook -->
+  <meta property="og:title" content="Cloud List | Error">
+  <meta property="og:description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots"/>
+  <meta property="og:url" content="https://www.cloudlist.xyz">
+  <meta property="og:site_name" content="Cloud Bot List"/>
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/644560294869205022/662805739852791825/cloudlistbg.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:title" content="Cloud List | Error">
+  <meta name="twitter:description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots">
+  <meta name="twitter:url" content="https://www.cloudlist.xyz">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/644560294869205022/662805739852791825/cloudlistbg.png">
+  <!-- <meta name="twitter:creator" content="@estevanmaito"> -->
+  <meta name="twitter:site" content="@CloudList">
+     
+     
+  <meta name="application-name" content="Cloud Bot List"/>
+  <meta name="msapplication-TileColor" content="#7289da" />
+  <meta name="msapplication-TileImage" content="https://cdn.discordapp.com/attachments/644560294869205022/662805739852791825/cloudlistbg.png" />
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Anton|Baloo+Bhai|Bowlby+One+SC|Concert+One|Francois+One|Fredoka+One|Passion+One|Patua+One|Permanent+Marker&display=swap" rel="stylesheet">	<link rel="canonical" href="https://cloudbotlist.glitch.me">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Baloo|Baloo+Bhai|Concert+One|Fjalla+One|Fredoka+One|Fugaz+One|Patua+One|Press+Start+2P|Teko&display=swap" rel="stylesheet">	<meta name="twitter:card" value="summary">
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7Q7WX2');</script>
+<!-- End Google Tag Manager -->
+<link href="https://fonts.googleapis.com/css?family=Anton|Archivo+Black&display=swap" rel="stylesheet">	<meta name="twitter:title" content="Cloud bot list">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->      
+    <!-- Compiled and minified CSS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://raw.github.com/mongodb/js-bson/master/browser_build/bson.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">  
+  <link rel="stylesheet" href="/index.css"> 
+  <script src="/index.js" as="script" ></script>
+</head>
+  <body> 
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7Q7WX2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->  
+    
+    <script>
+        function get(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        function onload() {
+    let token = Cookies.get('token');
+    var drop = document.getElementById("drop")
+    var login = document.getElementById("login")
+    var user_drop = document.getElementById("user_drop")
+    if (!token)  {
+      drop.style.display = "none"
+    }
+    else {
+				fetch('https://discordapp.com/api/users/@me', {
+					headers: {
+						Authorization: `Bearer ${token}`
+					}
+				})
+					.then(res => res.json())
+					.then(response => {
+						const { username, discriminator } = response;
+              drop.style.display = "initial"
+            console.log(response)
+              user_drop.innerHTML = `${username}#${discriminator}`
+              login.style.display="none"
+					})
+					.catch(console.error);
+    }
+            let ermsg = document.createElement("h4");
+            if (get("e") == "unknown") ermsg.innerHTML = `Your bot ID was invalid.`
+            if (get("e") == "verified") ermsg.innerHTML = `That bot was already found on the botlist.`
+            if (get("e") == "unverified") ermsg.innerHTML = `That bot was already found on the botlist. Wait for verification.`
+            if (get("e") == "bot") ermsg.innerHTML = `Bot page not found.`
+            if (get("e") == "user") ermsg.innerHTML = `User not found. Or User did not add a bot yet`
+           if (get("e") == "punished") {
+            var gifs = ["https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Fby4.gif?v=1579635708654","https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Fby5.gif?v=1579635708708","https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Fbye3.gif?v=1579635708739","https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Fbye10.gif?v=1579635709441","https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Fbye7.gif?v=1579635710275","https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Fbye5.gif?v=1579635710486","https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Fbye9.gif?v=1579635710570","https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Fbye8.gif?v=1579635711016","https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Fbye6.gif?v=1579635711157"]            
+             ermsg.innerHTML = `You Have been punished and can't no longer use our services <br> <br> <img src='${gifs[Math.floor(Math.random() * gifs.length)]}'/>`
+           } 
+            if (get("e") == "nobot") ermsg.innerHTML = `You did not add a bot yet. <a href="/add"> Add now </a>`
+            if (get("e") == "nobotfound") ermsg.innerHTML = `No Bot Found !`
+            if (get("e") == "owner") ermsg.innerHTML = `The bot is not yours to edit.`
+            if (get("e") == "voted") ermsg.innerHTML = `You already voted for this bot.Wait for 12 hours for the next vote`
+            if (get("e") == "admin") ermsg.innerHTML = `Hey,you don't have permission to do that.`
+            if (get("e") == "id") ermsg.innerHTML = `You can't change the bot id.` 
+            if (get("e") == "review") ermsg.innerHTML = `Hey,you can't access this page,cause your bot still under <a href="/queue"> Awaiting review </a>.` 
+            if (get("e") == "server") ermsg.innerHTML = `You are not in the server.`
+            if (get("e") == "guild") ermsg.innerHTML = `You need to be in our guild to add a bot. <a href="https://discordapp.com/invite/TuAQ8Ab"> Enter now </a>`
+            if (get("e") == "logged") ermsg.innerHTML = `You need to be logged to use this feature. <a href="<%=url%>"> Sign in now </a>`
+            if (get("e") == "js") ermsg.innerHTML = `JS is not supported in the long description.`
+            if (get("e") == "html") ermsg.innerHTML = `HTML is not supported in the description.`
+            document.getElementById('here').appendChild(ermsg)
+        }
+    </script>
+    <title>Discord Bots</title>
+</head>
+
+<body onload="onload()">
+      <link rel="shortcut icon" href="https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Faaee.jpg?v=1579489039463" type="image/x-icon">
+      <nav style="color:white;font-size:19px;" class="navbar navbar-expand-md" id="navbar">
+  <a style="background:transparent;font-size:35px;text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);" class="navbar-brand" href="/">Cloud List</a>
+
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+            aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+            <ul class="navbar-nav ml-auto">
+               <li  class="nav-item active">
+                  <a  class="nav-link" href="/server">
+                  <i class="fab fa-discord"></i> Join Discord</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/add">
+                  <i class="fas fa-plus-square"></i> Add Bot</a>
+               </li>
+               <li class="nav-item">
+              <a class="nav-link" href="https://www.patreon.com/cloudlist"><i class="fab fa-patreon"></i> Patreon</a>
+              </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="/tos"><i class="fas fa-info-circle"></i> TOS</a>
+                     <a class="dropdown-item" href="/markdown"><i class="fas fa-info-circle"></i> Markdown</a>      
+                     <a class="dropdown-item" href="/apidocs"><i class="fas fa-info-circle"></i> Api docs</a>
+                  </div>
+               </li>
+
+               <li id="login" class="nav-item">
+                  <a class="nav-link" id="login_discord" href="<%=url%>">
+                  <i class="fas fa-sign-in-alt"></i> Login With Discord</a>
+               </li>
+
+               <li id="drop" class="nav-item dropdown" style="display: initial;">
+                  <a class="nav-link dropdown-toggle" id="user_drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-user"></i> </a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4" style="background-color;white;;cursor:pointer;color:black">
+                     <a style="color:black" class="dropdown-item" href="/mybots" style="color: white"><i class="fas fa-database"></i> My Bots</a>
+                     <a style="color:black"  class="dropdown-item" href="/user" style="color: white"><i class="fas fa-user"></i> Profile</a>
+                     <a style="color:black"  class="dropdown-item" href="/api/keys" style="color: white"><i class="fas fa-key"></i> Api Keys</a>
+                     <a style="color:black"  class="dropdown-item" href="/myapikeys" style="color: white"><i class="fas fa-key"></i> My Api Keys</a>
+                     <a style="color:black"  class="dropdown-item" href="/admin" style="color: white"><i class="fas fa-user-shield"></i> Bots</a>
+                     <div class="dropdown-divider"></div>
+                     <a style="color:black"  class="dropdown-item" href="logout" style="color: white"><i class="fas fa-sign-out-alt"></i> Log out</a>
+                  </div>
+               </li>
+
+            </ul>
+         </div>
+      </nav>
+
+<style>
+#navbar {
+  height: 70px;
+  background: transparent; // Transparent initial setting
+  display: block;
+  color:white;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease .5s;
+}
+  #navbar.shrink {
+  opacity:95%;
+  height: auto;
+  transition: all ease .5s;
+  background-color:#313336;
+}
+a {
+    font-size:19px;
+    margin-right:10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s color;
+}
+
+a:hover {
+    color: white;
+    background-color: #1F1F1F;
+}
+  </style>
+    <div id="content" style="margin-top:130px;">
+
+        <span class="header">
+        <h1>Error</h1>
+        <p style="color:black" id="here"></p>
+      </span>
+        <a style="margin-top:30px;" id="back" class="button" href="javascript:history.back()">Back</a>
+    </div>
+
+</body>
+
+</html>
+
+
+<style>
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Hind';
+    src: url('https://fonts.gstatic.com/s/hind/v8/5aU69_a8oxmIdGl4BA.woff2');
+}
+
+
+
+.active-navtext {
+    color: #00ff8c !important;
+}
+
+
+.arrow {
+    color: black;
+    border: 5px solid rgba(0, 0, 0, 0);
+    position: relative;
+    height: 20px;
+}
+
+
+#content {
+    margin-top: 400px;
+    width: 100%;
+}
+
+.header {
+    text-align: center;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 56px !important;
+    color: #9184ff;
+    text-align: center;
+}
+
+h2 {
+    color: #3e396b !important;
+    margin-bottom: 0;
+}
+
+.header p {
+    width: 50%;
+    min-width: 300px;
+    display: block;
+    margin: 0 auto;
+    color: #CFCFCF;
+}
+  
+  h4 {
+    color: white
+  }
+
+/* Cards begin */
+
+.desc {
+    min-height: 130px;
+}
+
+.title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#cards {
+    text-align: center;
+}
+
+.card {
+    padding: 20px;
+    height: 340px;
+    box-shadow: 0 0 4px 0.5px #888888;
+    margin: 20px;
+    display: inline-block;
+    width: calc(100vw/4);
+    transition: all 400ms ease;
+}
+
+.large {
+    height: 390px;
+}
+
+.icon {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 0.5px #888888;
+}
+
+.card a {
+    position: relative;
+    bottom: 15px;
+}
+
+#loading {
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+}
+
+.nsfw {
+    filter: blur(5px);
+    transition: 0.5s filter;
+}
+
+.nsfw:hover {
+    filter: blur(0);
+}
+
+.search {
+    height: 26px;
+    margin: 0 60px 15px 15px;
+    position: relative;
+    float: right;
+}
+
+.search img {
+    position: relative;
+    top: -4px;
+}
+
+#search {
+    padding: 0 5px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+[contenteditable=true]:empty:before {
+    content: attr(placeholder);
+    display: block;
+}
+
+#bot-icon {
+    margin-left: 50px;
+    border-radius: 50%;
+}
+
+#long {
+    background-color: #F3F3F3;
+    padding: 15px;
+    margin: 15px;
+}
+
+#by {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin: 15px;
+    background-color: #F3F3F3;
+    height: 30px;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+#by img {
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.right {
+    position: relative;
+    left: 300px;
+    top: -200px;
+    color: #888888;
+    width: calc(100% - 300px)
+}
+
+code {
+    padding: 2px 5px;
+    color: #FF5252;
+    background-color: #F3F3F3;
+}
+
+#searchMore {
+    text-align: center;
+    display: none;
+}
+
+.searchbar-holder {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.button::after {
+    height: 100%;
+    left: -36%;
+    top: 0;
+    width: 0;
+    transform: skew(50deg);
+    transform-origin: top left;
+    transition: all 400ms ease;
+}
+
+.button:hover::after {
+    height: 100%;
+    width: 136%;
+}
+
+.button {
+    overflow: hidden;
+    font-size: 14px;
+    padding: 8px 20px;
+    margin-right: 12px;
+    border-radius: 4px;
+    border: 2px solid;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    background: transparent;
+    text-transform: uppercase;
+    transition: all 400ms ease;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.26);
+    color: #00ff8c;
+    border-color: #00ff8c;
+    display: block;
+    margin: 8px auto;
+    text-align: center;
+    width: calc(100%/4);
+}
+
+.small {
+    width: calc(4*100%/5);
+}
+
+.button::before,
+.button::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #00ff8c;
+}
+
+.button:hover {
+    color: white;
+}
+
+.dd-content {
+    display: none;
+    margin-top: -9px;
+    padding: 10px 30px;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    background-color: #fff;
+}
+
+.dd-content:hover {
+    display: block;
+}
+
+.input-holder {
+    position: relative;
+    width: 70%;
+    max-width: 900px;
+    min-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.input {
+    height: 28px;
+    font-size: 16px;
+    padding: 13px 15px;
+    border-radius: 4px;
+    border: 1px solid #888;
+    width: 100%;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
+    transition: all 600ms ease;
+}
+
+.input:not(:placeholder-shown).input:not(:focus)+.placeholder {
+    transform: scale(.75) translateY(-39px) translateX(-5px);
+    color: #888;
+    z-index: 10 !important;
+}
+
+.input:focus {
+    border-color: #00ff8c;
+}
+
+.input:focus+.placeholder {
+    transform: scale(.75) translateY(-39px) translateX(-5px);
+    color: #00ff8c;
+    z-index: 10 !important;
+}
+
+.xinput:focus+.placeholder {
+    transform: scale(.75) translateY(-39px) translateX(-35px);
+    color: #00ff8c;
+    z-index: 10 !important;
+}
+
+.xinput:focus+.placeholder:after {
+    content: " separated by spaces"
+}
+
+.placeholder {
+    position: absolute;
+    top: 17px;
+    left: 8px;
+    font-size: 15px;
+    padding: 0 8px;
+    background-color: #fff;
+    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #888;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    z-index: -2;
+}
+
+textarea:focus+.textarea-placeholder {
+    color: #00ff8c;
+}
+
+textarea {
+    height: auto !important;
+    resize: none;
+}
+
+.textarea-placeholder {
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    font-size: 11.25px;
+    color: #888;
+    padding: 0 8px;
+    background-color: #fff;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    z-index: 10;
+    transition: all 400ms ease;
+}
+
+hr {
+    width: 80%;
+    height: 2px;
+    color: #888;
+    background-color: #888;
+    margin-bottom: 20px;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    #navTop {
+        margin: 30px 10px;
+        width: calc(100% - 20px)
+    }
+    .arrow {
+        visibility: hidden;
+    }
+    .search {
+        margin-bottom: 0;
+    }
+    .card,
+    .button {
+        width: calc(100% - 80px)
+    }
+    #bot-icon {
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .right {
+        display: block;
+        margin: auto;
+        text-align: center;
+        left: 0;
+        top: 50px;
+        width: 70%;
+    }
+    #long {
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #search {
+        display: none;
+    }
+}
+</style>
+
+
+

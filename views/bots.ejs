@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+   
+      <script>
+         if (location.protocol != 'https:') {
+          location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+         }
+      </script>
+          <script data-ad-client="ca-pub-7057922306604419" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+       <!-- Codificação caracteres da página -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+  <!-- SEO Geral -->
+  <title>Rainy List  | Bot <%=data.name%> </title>
+  <meta name="description" content="<%=data.short_description%> | Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots">
+  <link rel="canonical" href="https://www.cloudlist.xyz">
+  <meta name="author" content="Bruninho">
+  <meta name="robots" content="index">
+  <meta name="keywords" content="<%=data.name%>,lista, melhores, bots, discord, música, moderação, league of legends, jogos, economia, brasileiros, português, discordapp, bots para discord,Cloud bot List,cloud list,cloud bot list,bots for discord,game,tags,tag,fun,webdashboard,discord bot list,dc bot list,bot list,NSFW,moderation,english">
+  <link rel="canonical" href="https://www.cloudlist.xyz/bots/<%=data.bot%>">
+
+  <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="Cloud List  | Bot <%=data.name%>">
+  <meta itemprop="description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots">
+  <meta itemprop="image" content="https://images.discordapp.net/avatars/<%=data.bot%>/<%=data.avatar%>.png?size=512">
+  <link href="https://plus.google.com/+SuaPagina" rel="publisher">
+  
+  <!-- Open Graph Facebook -->
+  <meta property="og:title" content="Cloud List  | Bot <%=data.name%>">
+  <meta property="og:description" content="Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots"/>
+  <meta property="og:url" content="https://www.cloudlist.xyz">
+  <meta property="og:site_name" content="Cloud List  | Bot <%=data.name%>"/>
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.discordapp.net/avatars/<%=data.bot%>/<%=data.avatar%>.png?size=512">
+
+  <!-- Twitter -->
+  <meta name="twitter:title" content="Cloud List  | Bot <%=data.name%> ">
+  <meta name="twitter:description" content="<%=data.short_description%> | Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users. Cloud Bot List - Spice up your Discord experience with our diverse range of Discord bots">
+  <meta name="twitter:url" content="https://www.cloudlist.xyz">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://images.discordapp.net/avatars/<%=data.bot%>/<%=data.avatar%>.png?size=512">
+     <!-- <meta name="twitter:creator" content="@estevanmaito"> -->
+  <meta name="twitter:site" content="@CloudList">
+  <meta name="application-name" content="Cloud List  | Bot <%=data.name%>"/>
+  <meta name="msapplication-TileColor" content="#7289da" />
+  <meta name="msapplication-TileImage" content="https://images.discordapp.net/avatars/<%=data.bot%>/<%=data.avatar%>.png?size=512" />
+      <link rel="shortcut icon" href="https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Floogo.png?v=1580604768550" type="image/x-icon">
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#config-web-app -->      
+      <!-- Compiled and minified CSS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Anton|Baloo+Bhai|Bowlby+One+SC|Concert+One|Francois+One|Fredoka+One|Passion+One|Patua+One|Permanent+Marker&display=swap" rel="stylesheet">
+      <link rel="canonical" href="https://cloudbotlist.glitch.me">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <link rel="stylesheet" href="/index.css">
+   </head>
+   <body>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/10.0.0/markdown-it.js"></script>
+      <link rel="shortcut icon" href="https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Faaee.jpg?v=1579489039463" type="image/x-icon">
+      <nav style="border:none;color:white;font-size:19px;background-color:<%=data.color%>" class="navbar navbar-expand-md" id="navbar">
+<a style="color:white;border:none;background:transparent;font-size:35px;text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);" class="navbar-brand" href="/">Rainy List</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+            aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+            <ul class="navbar-nav ml-auto">
+               <li  class="nav-item active">
+                  <a style="border:none"  class="nav-link" href="/server">
+                  <i class="fab fa-discord"></i> Join Discord</a>
+               </li>
+               <li class="nav-item">
+                  <a style="border:none"class="nav-link" href="/add">
+                  <i class="fas fa-plus-square"></i> Add Bot</a>
+               </li>
+               <li class="nav-item">
+              <a style="border:none"style="color:black" class="nav-link" href="https://www.patreon.com/cloudlist"><i class="fab fa-patreon"></i> Patreon</a>
+              </li>
+               <li class="nav-item dropdown">
+                  <a style="border:none"class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="https://www.npmjs.com/package/cloud-list"><img src="https://img.icons8.com/windows/32/000000/npm.png"> Npm Cloudlist</a>
+                     <a class="dropdown-item" href="/apidocs"><img src="https://img.icons8.com/windows/32/000000/api.png"> Api V¹</a>
+                     <a class="dropdown-item" href="/tos"><img src="https://img.icons8.com/dusk/32/000000/rules.png"> TOS</a>
+                     <a class="dropdown-item" href="/markdown"><img src="https://img.icons8.com/dusk/32/000000/ball-point-pen.png"> Markdown</a>       
+                    <a class="dropdown-item" href="/certified"><img src="https://img.icons8.com/dusk/32/000000/trophy.png"> Certified</a> 
+                  </div>
+               </li>
+
+               <li id="login" class="nav-item">
+                  <a style="border:none"class="nav-link" id="login_discord" href="<%=url%>">
+                  <i class="fas fa-sign-in-alt"></i> Login With Discord</a>
+               </li>
+               <li id="drop" class="nav-item dropdown" style="display: initial;">
+                  <a style="border:none"class="nav-link dropdown-toggle" id="user_drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-user"></i></a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4" style="background-color;white;;cursor:pointer;color:black">
+                     <a style="border:none"style="color:black" class="dropdown-item" href="/mybots" style="color: white"><i class="fas fa-database"></i> My Bots</a>
+                     <a style="border:none"style="color:black"  class="dropdown-item" href="/user" style="color: white"><i class="fas fa-user"></i> Profile</a>
+                     <a style="border:none"style="color:black"  class="dropdown-item" href="/api/keys" style="color: white"><i class="fas fa-key"></i> Api Keys</a>
+                     <a style="border:none"style="color:black"  class="dropdown-item" href="/myapikeys" style="color: white"><i class="fas fa-key"></i> My Api Keys</a>
+                     <a style="border:none"style="color:black"  class="dropdown-item" href="/admin" style="color: white"><i class="fas fa-user-shield"></i> Bots</a>
+                     <div class="dropdown-divider"></div>
+                     <a style="border:none"style="color:black"  class="dropdown-item" href="logout" style="color: white"><i class="fas fa-sign-out-alt"></i> Log out</a>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <body>
+         <div>
+            <div id ="animated_background" style="width:100.333333333%;height:100%;background-image: url(https://cdn.glitch.com/a41b7884-47f3-4b54-aba8-dfda5825d37f%2Flogo.png?v=1578479749487),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) !important;background-blend-mode: overlay !important;background-repeat: repeat;background-position: center;background-attachment: scroll;background-size: 21%;animation-name: moveanimation;animation-duration: 25s;animation-iteration-count: infinite;animation-timing-function: ease-in-out;">
+              
+               <img id="blob" class="vert-move" width="180px" height="180px" style="margin-top:30px;box-shadow:0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);border-radius:50%;margin-left: 50px;" src="https://cdn.discordapp.com/avatars/<%=data.bot%>/<%=data.avatar%>.png">
+                       <style>
+                        #blob {
+                        border-radius: 50%;
+                        margin: 10px;
+                        box-shadow: 0 0 0 0 rgba(255,255,255, 0.9);
+                        transform: scale(4);
+                        animation: pulse 2s infinite;
+                        }
+                        @keyframes pulse {
+                        0% {
+                        transform: scale(0.95);
+                        box-shadow: 0 0 0 0 rgba(255,255,255, 0.9);
+                        }
+                        70% {
+                        transform: scale(1);
+                        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+                        }
+                        100% {
+                        transform: scale(0.95);
+                        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                        }
+                        }                   
+                     </style>
+               <h1 style="color:white;text-align:center;text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);" class="right">
+                  <%= data.name %>
+               </h1>
+               <div class="right" style="text-align:center;word-wrap: break-word;color:white;margin-top: 20px;">
+                  <%= data.short_description %>
+                 
+               </div>
+              
+               <br>
+              
+               <div class="right" id="container" style="margin-top:10px;margin-bottom:10px;">
+                  <a id="btn_stats" style="margin-bottom:5px;background-color:#2c2f33;color:white;padding-top:4px;padding-left:4px;padding-bottom:4px;border-radius:4px;"> Status <span id="status" style="height:100px;background-color:#66bfe8;color:white;padding:3px;border-radius:0  4px 4px 0 ;"><%=status%></span></a> 
+                  <a id="btn_stats" style="margin-bottom:5px;background-color:#2c2f33;color:white;padding-top:4px;padding-left:4px;padding-bottom:4px;border-radius:4px;"> library <span id="status" style="height:100px;background-color:#66bfe8;color:white;padding:3px;border-radius:0  4px 4px 0 ;"><%=data.library%></span></a>  
+                  <a id="btn_stats" style="margin-bottom:5px;background-color:#2c2f33;color:white;padding-top:4px;padding-left:4px;padding-bottom:4px;border-radius:4px;"> Votes <span id="status" style="height:100px;background-color:#e8c866;color:white;padding:3px;border-radius:0  4px 4px 0 ;"><%=data.votes * -1%></span></a>  
+                  <a  id="btn_stats"style="margin-bottom:5px;background-color:#2c2f33;color:white;padding-top:4px;padding-left:4px;padding-bottom:4px;border-radius:4px;"> Month Votes <span style="height:100px;background-color:#e8a166;color:white;padding:3px;border-radius:0  4px 4px 0 ;"><%= month_votes * -1 %></span></a>
+                  
+                 <%if(data.isbot === "Awaiting review"){%><div class="alert alert-danger" style="width:auto;height:auto;text-align:center;font-size:30px;" role="alert"> <i class="fas fa-exclamation-triangle"></i> Awaiting Review </div> <%}%>
+                  <a id="btn_stats" style="background-color:#2c2f33;color:white;padding-top:4px;padding-left:4px;padding-bottom:4px;border-radius:4px;"> Prefix <span style="height:100px;background-color:#68e866;color:white;padding:3px;border-radius:0  4px 4px 0 ;"><%= data.prefix %></span></a>
+                 <br>
+                 <br>
+                 <div id="cointainer">
+                  <a  style="margin-bottom:10px;background-color:#2c2f33;color:white;padding-top:4px;padding-left:4px;padding-bottom:4px;border-radius:4px;"> Tags 
+                  <% var tags = data.tags.split(",") 
+                  tags.forEach(function(tag) {  %>   
+                    <span id="tags_span" style="margin-top:130px;" onClick="window.open('/tag/<%=tag%>');">  <%=tag%> | </span>
+                  <%})%>
+                  </a>                   
+                 </div>
+                 <br>
+                 <br>
+                <a id="btn_stats" href="/report/<%=data.bot%>" style="background-color:#e86666;border-bottom:2px solid white;border-radius:5px;color:white;padding:4px;"> Report <i class="fas fa-flag"></i></a>
+               <a id="btn_stats" href="<%=data.bot_invite%>"  style="background-color:#6de866;border-bottom:2px solid white;border-radius:5px;color:white;padding:4px;"> Invite <i class="fas fa-sign-in-alt"></i></a>
+               <a id="btn_stats" href="/redirect/<%=data.server_invite%>"  style="background-color:#7289da;border-bottom:2px solid white;border-radius:5px;color:white;padding:4px; "> Support Server <i class="fab fa-discord"></i> </a>
+            
+
+               <%if(stats === "logged"){%>
+               <a id="btn_stats" href="https://www.cloudlist.xyz/vote/<%=data.bot%>" style="background-color:#ffaa1c;border-bottom:2px solid white;border-radius:5%;color:white;padding:4px; "> Vote for this bot <i class="far fa-thumbs-up"></i> </a>
+               <%}else {%>
+               <a id="btn_stats" href="https://discordapp.com/oauth2/authorize?client_id=651207307308302382&scope=identify%20guilds&response_type=code&redirect_uri=http%3A%2F%2Fwww.cloudlist.xyz%2Fcallback" style="background-color:#ffaa1c;border-bottom:2px solid white;border-radius:5px;color:white;padding:4px; "> Login in order to vote  <i class="fas fa-lock"></i></a>
+               <%}%>
+               <a id="btn_stats" href="<%=data.website%>" style="background-color:#666fe8;border-bottom:2px solid white;border-radius:5px;color:white;padding:4px; "> Website <i class="fas fa-link"></i> </a>  
+               </div>
+               <br>
+
+               <hr style="width:100%;">
+            </div>
+            <style>
+               @keyframes moveanimation {
+               from {
+               background-position: 0 0;
+               }
+               to {
+               background-position: 100% -100%;
+               }
+               }
+            </style>
+ <div style="margin-top:50px;">
+<center >
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- banner bom -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-7057922306604419"
+     data-ad-slot="1226212684"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>     
+</center>  
+ </div>            
+          <div style=" word-wrap: break-word;" id="long"></div>
+                          <a style="color:black" id="by" href="/user?name=<%= data.owner_name %>">
+                  <img id="bot_logo" style="position:relative;top:-5px;left:-10px;" src="" height="30px" />
+                  <script>
+                     var str = `<%=data.owner_avatar%>`
+                     var logo_owner = document.getElementById("bot_logo")
+                     if(str.startsWith("a_")) {
+                     logo_owner.setAttribute("src",`https://cdn.discordapp.com/avatars/<%=data.owner%>/<%=data.owner_avatar%>.gif`)
+                     }else {
+                     logo_owner.setAttribute("src",`https://cdn.discordapp.com/avatars/<%=data.owner%>/<%=data.owner_avatar%>.webp`)
+                     }
+                  </script>          
+                  <span style="position:relative;top:-3.5px;left:-10px;" class="navtext"> <%=data.owner_name %>#<%=data.owner_discriminator %></span>
+               </a>
+         </div>
+         <hr style="width:100%;">
+         <br>
+      <div id="footer">
+  <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Cloudlist.xyz Cloud bot list is an online platform that lists bots for discord. Cloud Bot List is not an affiliate and does not belong to discord.app</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Tags</h6>
+            <ul class="footer-links">
+              <li><a style="background-color:initial;border-bottom:initial;" href="/tag/moderation">Moderation</a></li>
+              <li><a style="background-color:initial;border-bottom:initial;" href="/tag/nsfw">NSFW</a></li>
+              <li><a style="background-color:initial;border-bottom:initial;" href="/tag/fun">fun</a></li>
+              <li><a style="background-color:initial;border-bottom:initial;" href="/tag/music">music</a></li>
+              <li><a style="background-color:initial;border-bottom:initial;" href="/tag/anime">anime</a></li>
+              <li><a  style="background-color:initial;border-bottom:initial;"href="/tag/webdashboard">web-dashboard</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul style="color:grey"class="footer-links">
+              <li><a style="background-color:initial;border-bottom:initial;" href="/add">Add bot</a></li>
+              <li><a style="background-color:initial;border-bottom:initial;" href="/list?page=1">list</a></li>
+              <li><a style="background-color:initial;border-bottom:initial;" href="/tos">TOS</a></li>
+              <li><a style="background-color:initial;border-bottom:initial;" href="/markdown">Markdown guide</a></li>
+              <li><a style="background-color:initial;border-bottom:initial;" href="/apidocs">Api docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a style="background-color:initial;border-bottom:initial;" href="#">CloudBotList</a>.
+              <br>
+<a style="background-color:initial;border-bottom:initial;" href="https://www.dmca.com/Protection/Status.aspx?ID=8f0b276b-9b91-49f4-aa29-528f6678161e&refurl=https://www.cloudlist.xyz/" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w100-5x1-10.png?ID=8f0b276b-9b91-49f4-aa29-528f6678161e"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+      </div>
+   </body>
+   <style>
+      blockquote {
+      padding:1.2em 30px 1.2em 75px;
+      border-left:6px solid white ;
+      margin: 1.5em 10px;
+      background:#606363;
+      }
+     hr {
+       color:white;
+       background-color:white;
+     }
+     code {
+       padding:4px;
+       border-radius:5px;
+       background-color:#23272a;
+       color:"#1ac588;
+     }
+     pre {
+       color:red;
+     }
+      #snowflakeContainer {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      display: none;
+      }
+      body {
+      background-color:<%=data.color%>;
+      color:white;
+      font-family: 'Baloo Bhai', cursive;  
+      padding-right: 4px;
+      }
+
+   </style>
+   <style>
+     .rainbow {
+  
+   /* Font options */
+
+  text-shadow: 2px 2px 4px #000000;
+  font-size:40px;
+  
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 5s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 5s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 5s infinite; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+   0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+    0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+      .nav-item {
+      cursor:pointer;
+      }
+      #navbar {
+      height: 70px;
+      background: transparent; // Transparent initial setting
+      display: block;
+      color:white;
+      width: 100%;
+      z-index: 99999;
+      transition: all ease .5s;
+      }
+      #navbar.shrink {
+      opacity:95%;
+      height: auto;
+      transition: all ease .5s;
+      background-color:#313336;
+      }
+      a {
+      border-radius:4px;
+      font-size:19px;
+      margin-right:10px;
+      text-decoration: none;
+      color: grey;
+      transition: 0.5s color;
+      }
+      a:hover {
+        
+      transition: 0.5s color;
+      color:#1ac588;
+
+      }
+             #tags_span {
+             transition: 0.5s color;
+              width:10%;
+          background-color:#a6a6a6;padding:4px;cursor:pointer;
+        }
+     #tags_span:hover {
+       
+      transition: 0.5s color;
+      color:	#7289da;
+     }
+     #btn_stats {
+       display: inline-block;
+     }
+      #tags:hover {
+      background-color:#697ec9
+      }
+   </style>
+   </div>
+   </body>
+   <script>
+      window.onload = async function() { 
+        
+            var md = window.markdownit();
+        var mark = `<%= data.long_description %>`
+        var string = md.render(mark.replace(/&gt;+/g, '>').replace(/&#39;+/g, "`").replace("&#96;","&#39;"))
+
+      
+        document.getElementById("long").innerHTML = string.replace(/\iframe\(([^\)]+)\)/g, `<div id="iframe_frame" style="--aspect-ratio: 16/9;"><iframe frameborder="0" src="$1"/></iframe> </div>`).replace(/\|\(([^\)]+)\)/g, `<div class="rainbow"><h1 class="rainbow">$1</h1> </div>`)
+      
+
+      if(`<%=status%>` === "online") {
+      var status = document.getElementById("status")
+      status.style.backgroundColor = "#1ac588";
+      }
+      if(`<%=status%>` === "offline") {
+      var status = document.getElementById("status")
+      status.style.backgroundColor= "#6b6a6a";
+      }
+      if(`<%=status%>` === "idle") {
+      var status = document.getElementById("status")
+      status.style.backgroundColor= "#ffaa00";
+      }
+      if(`<%=status%>` === "dnd") {
+      var status = document.getElementById("status")
+      status.style.backgroundColor = "#c5341a";
+      }
+    
+      
+        
+        let token = Cookies.get('token');
+        var drop = document.getElementById("drop")
+        var login = document.getElementById("login")
+        var user_drop = document.getElementById("user_drop")
+        if (!token)  {
+          drop.style.display = "none"
+        }
+        else {
+      		fetch('https://discordapp.com/api/users/@me', {
+      			headers: {
+      				Authorization: `Bearer ${token}`
+      			}
+      		})
+      			.then(res => res.json())
+      			.then(response => {
+      				const { username, discriminator } = response;
+                  drop.style.display = "initial"
+                console.log(response)
+                  user_drop.innerHTML = `${username}#${discriminator}`
+                  login.style.display="none"
+      			})
+      			.catch(console.error);
+        }
+      
+      
+      
+      
+      }
+      
+   </script>
+   <style>
+     body {
+       overflow-x: hidden;
+     }
+     table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+#iframe_frame::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+#iframe_frame::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+#iframe_frame::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+th{
+  background-color:	#99aab5;
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+   tr {
+      background-color: #2c2f33;
+     }
+  tbody tr:nth-child(odd){
+  background-color:#23272a;
+  color: #fff;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 15px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+  [style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+  
+}
+[style*="--aspect-ratio"] > img {  
+  height: auto;
+} 
+@supports (--custom:property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }  
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }  
+}
+
+      img.vert-move {
+      -webkit-animation: mover 1s infinite  alternate;
+      animation: mover 1s infinite  alternate;
+      }
+      img.vert-move {
+      -webkit-animation: mover 1s infinite  alternate;
+      animation: mover 1s infinite  alternate;
+      }
+      @-webkit-keyframes mover {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-10px); }
+      }
+      @keyframes mover {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-10px); }
+      }
+      @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+      }
+      :root {
+      --status: #999999;
+      }
+      @font-face {
+      font-family: 'Hind';
+      src: url('https://fonts.gstatic.com/s/hind/v8/5aU69_a8oxmIdGl4BA.woff2');
+      }
+      .arrow {
+      color: black;
+      border: 5px solid rgba(0, 0, 0, 0);
+      position: relative;
+      height: 20px;
+      }
+      #content {
+      margin-top: 130px;
+      width: 100%;
+      }
+      .header {
+      text-align: center;
+      }
+      h1 {
+      font-size: 56px !important;
+      color: #54c3ff;
+      text-align: center;
+      }
+      h2 {
+      color: #fff !important;
+      margin-bottom: 0;
+      }
+      /* Cards begin */
+      .desc {
+      min-height: 130px;
+      color: white;
+      }
+      .title {
+      color:white;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      }
+      #cards {
+      text-align: center;
+      }
+      .card {
+      padding: 20px;
+      height: 340px;
+      box-shadow: 0 0 4px 0.5px #888888;
+      margin: 20px;
+      display: inline-block;
+      width: calc(100vw/4);
+      transition: all 400ms ease;
+      background-color: #464141;
+      }
+      .large {
+      height: 390px;
+      }
+      .icon {
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      box-shadow: 0 0 4px 0.5px #888888;
+      }
+      .card a {
+      position: relative;
+      bottom: 15px;
+      }
+      #loading {
+      display: block;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      margin: 0 auto;
+      }
+      .nsfw {
+      filter: blur(5px);
+      transition: 0.5s filter;
+      }
+      .nsfw:hover {
+      filter: blur(0);
+      }
+      [contenteditable=true]:empty:before {
+      content: attr(placeholder);
+      display: block;
+      }
+      #bot-icon {
+      margin-left: 50px;
+      border-radius: 50%;
+      }
+      #long {
+      width:auto;
+      background-color: #313131;
+      padding: 15px;
+      margin: 15px;
+      color: white;
+      }
+      #by {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 50px;
+      background-color: #F3F3F3;
+      height: 30px;
+      user-select: none;
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+      -o-user-select: none;
+      }
+      #by img {
+      border-radius: 50%;
+      font-size: 20px;
+      }
+      .right {
+      position: relative;
+      left: 300px;
+      top: -200px;
+      color: #888888;
+      width: calc(100% - 300px)
+      }
+
+      .button::after {
+      height: 100%;
+      left: -36%;
+      top: 0;
+      width: 0;
+      transform: skew(50deg);
+      transform-origin: top left;
+      transition: all 400ms ease;
+      }
+      .button:hover::after {
+      height: 100%;
+      width: 136%;
+      }
+      .button {
+      overflow: hidden;
+      font-size: 14px;
+      padding: 8px 20px;
+      margin-right: 12px;
+      border-radius: 4px;
+      border: 2px solid;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      background: transparent;
+      text-transform: uppercase;
+      transition: all 400ms ease;
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.26);
+      color: #00ff8c;
+      border-color: #00ff8c;
+      display: block;
+      margin: 8px auto;
+      text-align: center;
+      width: calc(100%/4);
+      }
+      .small {
+      width: calc(4*100%/5);
+      }
+      .button::before,
+      .button::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background: #00ff8c;
+      }
+      .button:hover {
+      color: white;
+      }
+      .dd-content {
+      display: none;
+      margin-top: -9px;
+      padding: 10px 30px;
+      position: absolute;
+      right: 0;
+      z-index: 0;
+      background-color: #fff;
+      }
+      .dd-content:hover {
+      display: block;
+      }
+      .input-holder {
+      position: relative;
+      width: 70%;
+      max-width: 900px;
+      min-width: 300px;
+      display: block;
+      margin: 0 auto;
+      }
+      .input {
+      height: 28px;
+      font-size: 16px;
+      padding: 13px 15px;
+      border-radius: 4px;
+      border: 1px solid #888;
+      width: 100%;
+      outline: none;
+      background-color: rgba(0, 0, 0, 0);
+      -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
+      transition: all 600ms ease;
+      }
+      .input:not(:placeholder-shown).input:not(:focus)+.placeholder {
+      transform: scale(.75) translateY(-39px) translateX(-5px);
+      color: #888;
+      z-index: 10 !important;
+      }
+      .input:focus {
+      border-color: #00ff8c;
+      }
+      .input:focus+.placeholder {
+      transform: scale(.75) translateY(-39px) translateX(-5px);
+      color: #00ff8c;
+      z-index: 10 !important;
+      }
+      .xinput:focus+.placeholder {
+      transform: scale(.75) translateY(-39px) translateX(-35px);
+      color: #00ff8c;
+      z-index: 10 !important;
+      }
+      .xinput:focus+.placeholder:after {
+      content: " separated by spaces"
+      }
+     #long img{
+       max-width:100%;
+      object-fit: contain; 
+     }
+      .placeholder {
+      position: absolute;
+      top: 17px;
+      left: 8px;
+      font-size: 15px;
+      padding: 0 8px;
+      background-color: #fff;
+      transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+      color: #888;
+      user-select: none;
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+      -o-user-select: none;
+      z-index: -2;
+      }
+      textarea:focus+.textarea-placeholder {
+      color: #00ff8c;
+      }
+      textarea {
+      height: auto !important;
+      resize: none;
+      }
+      .textarea-placeholder {
+      position: absolute;
+      top: -8px;
+      left: 8px;
+      font-size: 11.25px;
+      color: #888;
+      padding: 0 8px;
+      background-color: #fff;
+      user-select: none;
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+      -o-user-select: none;
+      z-index: 10;
+      transition: all 400ms ease;
+      }
+      hr {
+      width: 80%;
+      height: 2px;
+      color: white;
+      background-color: white;
+      margin-bottom: 20px;
+      }
+      .center {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+      }
+      @media only screen and (max-width: 768px) {
+      #navTop {
+      margin: 30px 10px;
+      width: calc(100% - 20px)
+      }
+      .arrow {
+      visibility: hidden;
+      }
+      .search {
+      margin-bottom: 0;
+      }
+      .card,
+      .button {
+      width: calc(100% - 80px)
+      }
+      #bot-icon {
+      display: block;
+      margin: auto;
+      margin-bottom: 20px;
+      }
+      .right {
+      display: block;
+      margin: auto;
+      text-align: center;
+      left: 0;
+      top: 50px;
+      width: 70%;
+      }
+      #long {
+      margin-top: 70px;
+      }
+      }
+      @media only screen and (max-width: 500px) {
+      #search {
+      display: none;
+      }
+      }
+   </style>
